@@ -1,16 +1,33 @@
 {
-    "extends": "eslint:recommended",
-    "env": {
-      "browser": true,
-      "commonjs": true,
-      "node": true,
-      "es6": true
-    },
-    "parserOptions": {
-      "ecmaVersion": 2018
-    },
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "plugins": [
+      "react",
+      "jsx-a11y",
+      "react-hooks"
+    ],
     "rules": {
-      "no-console": "off",
-      "curly": "warn"
+      "indent": ["error", 2, { "SwitchCase": 1 }],
+      "linebreak-style": ["error", "unix"],
+      "semi": ["error", "always"],
+      "no-restricted-imports": ["error", {
+        "paths": [{
+          "name": "moment",
+          "message": "Use date-fns or Luxon instead"
+        }]
+      }],
+      "no-undef": "off",
+      "no-unused-vars": "off",
+      "comma-dangle": "off",
+      "keyword-spacing": "off",
+      "jsx-a11y/label-has-for": "off",
+      "jsx-a11y/label-has-associated-control": "off",
+      "class-methods-use-this": "off",
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+      "no-use-before-define": "off",
+      "no-bitwise": "off",
+      "no-plusplus": "off",
+      "no-restricted-globals": "off"
     }
-}
+  }
