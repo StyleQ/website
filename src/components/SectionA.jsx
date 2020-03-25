@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { graphql, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
 import Text from './Typography';
 import Container from './Container';
 import Button from './Button';
@@ -22,18 +20,6 @@ const Root = styled.section`
 `;
 
 export default () => {
-  const data = useStaticQuery(graphql`
-    query {
-      file(relativePath: { eq: "model.png" }) {
-        childImageSharp {
-          fixed(width: 408, height: 612) {
-            ...GatsbyImageSharpFixed_tracedSVG
-          }
-        }
-      }
-    }
-  `);
-
   return (
     <Root>
       <Container>
@@ -42,7 +28,7 @@ export default () => {
           <Text>StyleQ helps you get quick hairstylists without long waiting schedules and we keep stylists in business with your warm presence.</Text>
           <Button variant="primary">REGISTER NOW</Button>
         </div>
-        <Img fixed={data.file.childImageSharp.fixed} />
+        {/* <img src="https://placehold.it/200" alt="foobar" /> */}
       </Container>
     </Root>
   );

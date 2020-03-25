@@ -3,7 +3,7 @@ import Layout from '../templates/Layout';
 import Header from '../components/Header';
 import SectionA from '../components/SectionA';
 
-const IndexPage = () => {
+function Home() {
   return (
     <Layout title="Home">
       <Header />
@@ -12,4 +12,4 @@ const IndexPage = () => {
     </Layout>);
   };
 
-export default IndexPage
+export default Home;

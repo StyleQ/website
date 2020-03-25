@@ -16,6 +16,9 @@ module.exports = env => {
       port: 9000,
       open: true,
     },
+    resolve: {
+      extensions: ['*', '.js', '.jsx'],
+    },
     module: {
       rules: [
         {
