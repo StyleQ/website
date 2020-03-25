@@ -13,6 +13,8 @@ module.exports = env => {
     devServer: {
       contentBase: './public',
       historyApiFallback: true,
+      port: 9000,
+      open: true,
     },
     module: {
       rules: [
