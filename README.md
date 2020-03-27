@@ -2,12 +2,12 @@
 The bookstyleq.com website
 
 ### Tools & Dependencies
-- [Node.js](https://nodejs.org/en/) v12.16.1 - JavaScript Runtime
-- [NPM](https://www.npmjs.com/) v6.14.12 - Package Manager
-- [React](https://reactjs.org/) v16.13.1 - User Interface Library
-- [Webpack](https://webpack.js.org/) v4.42.0 - Bundler
-- [Styled Components](https://styled-components.com/) v5.0.1 - Styling
-- [Express](https://expressjs.com/) v4.17.1 - Optional Web Server
+- [Node.js](https://nodejs.org/en/) v12.16.x - JavaScript Runtime
+- [NPM](https://www.npmjs.com/) v6.14.x - Package Manager
+- [React](https://reactjs.org/) v16.13.x - User Interface Library
+- [Webpack](https://webpack.js.org/) v4.42.x - Bundler
+- [Styled Components](https://styled-components.com/) v5.0.x - Styling
+- [Express](https://expressjs.com/) v4.17.x - Optional Web Server
 - Jest - General testing library
 - Testing Library - React Testing library for component testing
 
