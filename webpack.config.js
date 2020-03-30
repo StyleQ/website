@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackTemplate = require('html-webpack-template');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = env => {
   const isProduction = env.NODE_ENV === 'production';
@@ -23,7 +24,7 @@ module.exports = env => {
       rules: [
         {
           test: /\.jsx?$/,
-          use: ['babel-loader'], // TODO: Add eslint-loader
+          use: ['babel-loader', 'eslint-loader'],
           exclude: /node_modules/,
         },
         {
@@ -90,9 +91,12 @@ module.exports = env => {
         // Mount ids for main app and modal portal
         appMountIds: ['app', 'modal']
       }),
+      new CopyPlugin([
+        { from: 'static' }
+      ]),
     ],
     output: {
-      filename: '[name].bundle.js',
+      filename: '[name]-[hash].bundle.js',
       path: path.resolve(__dirname, 'public'),
       publicPath: '/',
     },
