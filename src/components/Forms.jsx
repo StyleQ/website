@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 
 const TextBoxStyle = styled.input`
@@ -17,9 +18,13 @@ const TextBoxStyle = styled.input`
   `}
 `;
 
-export const TextBox = ({ type = "text", ...props }) => (
+export const TextBox = ({ type = 'text', ...props }) => (
   <TextBoxStyle type={type} {...props} />
 );
+
+TextBox.propTypes = {
+  type: PropTypes.string.isRequired
+};
 
 export const TextArea = styled.textarea``;
 

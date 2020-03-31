@@ -3,19 +3,16 @@ import PropTypes from 'prop-types';
 import GlobalStyle from '../components/GlobalStyle';
 import Footer from '../components/Footer';
 
-const Layout = ({ children }) => {
-  return (
-    <>
-      <GlobalStyle />
-      {children}
-      <Footer />
-    </>
-  );
-};
+const Layout = ({ children }) => (
+  <>
+    <GlobalStyle />
+    {children}
+    <Footer />
+  </>
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-  title: PropTypes.string.isRequired
 };
 
 export default Layout;

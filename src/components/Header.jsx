@@ -32,12 +32,12 @@ const Root = styled.header`
 const Header = () => (
   <Root>
     <Container>
-        <Link to="/"><Logo /></Link>
-        <div>
-          <Button>BECOME A STYLIST</Button>
-          <Button as="a" rel="noopener" href="https://my.setmore.com/bookanappointmentv3.do?uniqueKey=dc195bd4-0d63-451f-84ac-4b4ec3ecf5ca">EXPLORE DEMO</Button>
-          <Button variant="primary">JOIN THE WAITLIST</Button>
-        </div>
+      <Link to="/"><Logo /></Link>
+      <div>
+        <Button>BECOME A STYLIST</Button>
+        <Button as="a" rel="noopener" href="https://my.setmore.com/bookanappointmentv3.do?uniqueKey=dc195bd4-0d63-451f-84ac-4b4ec3ecf5ca">EXPLORE DEMO</Button>
+        <Button variant="primary">JOIN THE WAITLIST</Button>
+      </div>
     </Container>
   </Root>
 );

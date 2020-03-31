@@ -9,7 +9,8 @@ function Home() {
       <Header />
       <SectionA />
       <h1>Container heading</h1>
-    </Layout>);
-  };
+    </Layout>
+  );
+}
 
 export default Home;

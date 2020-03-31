@@ -19,17 +19,18 @@ const Root = styled.section`
   }
 `;
 
-export default () => {
-  return (
-    <Root>
-      <Container>
-        <div>
-          <Text as="h1">Treat Yourself.</Text>
-          <Text>StyleQ helps you get quick hairstylists without long waiting schedules and we keep stylists in business with your warm presence.</Text>
-          <Button variant="primary">REGISTER NOW</Button>
-        </div>
-        {/* <img src="https://placehold.it/200" alt="foobar" /> */}
-      </Container>
-    </Root>
-  );
-};
+export default () => (
+  <Root>
+    <Container>
+      <div>
+        <Text as="h1">Treat Yourself.</Text>
+        <Text>
+          StyleQ helps you get quick hairstylists without long waiting
+          schedules and we keep stylists in business with your warm presence.
+        </Text>
+        <Button variant="primary">REGISTER NOW</Button>
+      </div>
+      {/* <img src="https://placehold.it/200" alt="foobar" /> */}
+    </Container>
+  </Root>
+);

@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
-const variantStyle = variant => {
-  if(!variant) return;
+const variantStyle = (variant) => {
+  if(!variant) throw new Error('Variant not set. It is a required parameter');
   const variants = {
     primary: `
       background: var(--color-brand-1);
