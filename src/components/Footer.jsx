@@ -38,7 +38,7 @@ const Footer = () => (
           <Text>Ready to start having quick and quality styling done?</Text>
           <Text as="h3">Create an account with us</Text>
         </div>
-        <Button variant="primary" responsive={true}>REGISTER NOW</Button>
+        <Button variant="primary" responsive>REGISTER NOW</Button>
       </Container>
     </TopFooter>
     <BottomFooter>
@@ -62,11 +62,11 @@ const Footer = () => (
             <a href="https://play.google.com/store/apps/details?id=ubitrix.styleq&hl=en_US">Get the app on Android</a>
             <span>Get the app on iPhone (Coming Soon)</span>
           </div>
-            <Text>
-              <a href="https://www.facebook.com/BookStyleQ/">Facebook</a>
-              <a href="https://twitter.com/bookstyleq">Twitter</a>
-              <a href="https://www.instagram.com/intostyleq/">Instagram</a>
-            </Text>
+          <Text>
+            <a href="https://www.facebook.com/BookStyleQ/">Facebook</a>
+            <a href="https://twitter.com/bookstyleq">Twitter</a>
+            <a href="https://www.instagram.com/intostyleq/">Instagram</a>
+          </Text>
         </div>
       </Container>
     </BottomFooter>
