@@ -27,6 +27,10 @@ const Root = styled.header`
   + *{
     margin-top: 6.5rem;
   }
+  svg{
+    width: 10rem;
+    vertical-align: middle;
+  }
 `;
 
 const Header = () => (
