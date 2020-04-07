@@ -9,7 +9,7 @@ import Divider from '../assets/divider-one.svg';
 const Root = styled.section`
   position: relative;
   padding: 3rem 2rem 1rem 1rem;
-  background: #f9f3f8;
+  background: var(--color-brand-6);
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg clip-rule='evenodd' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' viewBox='0 0 682 574' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f3e9f1'%3E%3Cpath d='M618.895 0H465.646L-.003 558.455l278.618 14.91zM681.466 228.12V56.043L369.833 573.365l191.823-29.609z'/%3E%3C/g%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-size: 300%;
@@ -17,7 +17,7 @@ const Root = styled.section`
   text-align: center;
   overflow: hidden;
   ${Container} > :first-child{
-    margin: 6rem 0 2rem;
+    margin: 10rem 0 2rem;
   }
   p{
     max-width: 50rem;
@@ -37,7 +37,7 @@ const Root = styled.section`
       display: block;
       position: absolute;
       left: 0;
-      width: 105vw;
+      width: 100vw;
       bottom: -1rem;
     }
   }
