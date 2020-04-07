@@ -21,17 +21,18 @@ const textStyle = (element) => ({
     font-size: 3.6rem;
   `,
   h4: () => css`
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     color: var(--color-brand-1);
   `,
   h5: () => css`
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+    color: var(--color-brand-1);
   `,
   h6: () => css`
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   `,
   p: () => css`
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   `,
   span: () => css`
     margin: 0;
@@ -43,6 +44,9 @@ const textStyle = (element) => ({
   em: () => css`
     margin: 0;
     font-style: italic;
+  `,
+  small: () => css`
+    font-size: 1.4rem;
   `,
 }[element]());
 

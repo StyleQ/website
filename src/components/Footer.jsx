@@ -46,6 +46,8 @@ const BottomFooter = styled.footer`
     }
   }
   .copyright{
+    display: block;
+    margin-top: 2rem;
     color: #999;
   }
   @media(min-width: 920px) {
@@ -81,8 +83,8 @@ const Footer = () => (
               <Button variant="wrapped">SUBSCRIBE</Button>
             </Label>
           </form>
-          <Text className="copyright">
-            <span>© {new Date().getFullYear()} StyleQ. All rights reserved</span>
+          <Text as="small" className="copyright">
+            © {new Date().getFullYear()} StyleQ. All rights reserved
           </Text>
         </div>
         <div>
