@@ -63,7 +63,7 @@ const Button = styled.button`
   ${({ responsive }) => responsive && css`
     display: block;
     width: 100%;
-    @media(min-width: 520px) {
+    @media(min-width: 720px) {
       display: inline-block;
       width: auto;
     }

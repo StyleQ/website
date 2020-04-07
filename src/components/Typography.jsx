@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 
 const textStyle = (element) => ({
   h1: () => css`
-    font-size: 3.2rem;
+    font-size: 4.2rem;
     color: var(--color-brand-1);
+    line-height: 1.2;
     @media(min-width: 520px) {
-      font-size: 5.2rem;
+      font-size: 6.4rem;
     }
   `,
   h2: () => css`

@@ -3,25 +3,51 @@ import styled from 'styled-components';
 import Text from './Typography';
 import Container from './Container';
 import Button from './Button';
+import Model from '../assets/model.png';
+import Divider from '../assets/divider-one.svg';
 
 const Root = styled.section`
-  height: 700px;
+  position: relative;
   padding: 3rem 2rem 1rem 1rem;
   background: #f9f3f8;
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg clip-rule='evenodd' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' viewBox='0 0 682 574' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f3e9f1'%3E%3Cpath d='M618.895 0H465.646L-.003 558.455l278.618 14.91zM681.466 228.12V56.043L369.833 573.365l191.823-29.609z'/%3E%3C/g%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  background-size: 80%;
+  background-size: 300%;
   background-position: top right;
-  ${Container}{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: inherit;
+  text-align: center;
+  overflow: hidden;
+  ${Container} > :first-child{
+    margin: 6rem 0 2rem;
   }
   p{
-    max-width: 40rem;
-    margin: 1rem 0 3rem;
-    font-size: 2rem;
+    max-width: 50rem;
+    margin: 1rem auto 3rem;
+    font-size: 2.4rem;
+  }
+  img{
+    position: relative;
+    bottom: -2rem;
+    @media(min-width: 720px) {
+      bottom: -1rem;
+    }
+  }
+  > svg{
+    display: none;
+    @media(min-width: 720px) {
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 105vw;
+      bottom: -1rem;
+    }
+  }
+  @media(min-width: 920px) {
+    background-size: 90%;
+    text-align: left;
+    ${Container} {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 `;
 
@@ -34,9 +60,10 @@ export default () => (
           StyleQ helps you get quick hairstylists without long waiting
           schedules and we keep stylists in business with your warm presence.
         </Text>
-        <Button variant="primary">REGISTER NOW</Button>
+        <Button responsive variant="primary">REGISTER NOW</Button>
       </div>
-      {/* <img src="https://placehold.it/200" alt="foobar" /> */}
+      <img src={Model} alt="StyleQ Model" />
     </Container>
+    <Divider />
   </Root>
 );
