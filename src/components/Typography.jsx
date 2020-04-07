@@ -62,31 +62,6 @@ const Text = styled.p`
   ${({ weight }) => weight && css`
     font-weight: ${weight};
   `}
-  ${({ intro }) => intro && css`
-    margin: 1rem;
-    font-size: 4rem;
-    font-weight: 300;
-    text-align: right;
-    line-height: 1.2;
-    @media(min-width: 720px) {
-      margin: 2rem 1rem;
-      font-size: 8rem;
-    }
-    @media(min-width: 1100px) {
-      font-size: 10rem;
-    }
-  `}
-  ${({ subheading }) => subheading && css`
-    font-size: 4rem;
-    font-weight: 100;
-    color: rgba(0, 0, 0, .2);
-    @media(min-width: 520px) {
-      font-size: 6rem;
-    }
-    @media(min-width: 920px) {
-      font-size: 10rem;
-    }
-  `}
   ${({ truncate }) => truncate === 'break' && css`
     word-break: break-word;
   `}
