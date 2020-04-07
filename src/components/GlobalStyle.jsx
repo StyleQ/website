@@ -28,7 +28,7 @@ const GlobalStyle = createGlobalStyle`
   --round-radius-2: 4rem;
   --drop-shadow-1: .1rem .1rem .2rem rgba(0, 0, 0, .05);
   --drop-shadow-2: 0 .1rem .2rem rgba(0, 0, 0, .3);
-  --animation-easing: cubic-bezier(.5, 0, .5, 1);
+  --animation-easing: cubic-bezier(0.5, 0, 0.5, 1);
   --site-width: 1300px;
   font-size: 62.5%;
   scroll-behavior: smooth;

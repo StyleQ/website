@@ -3,7 +3,12 @@ import styled from 'styled-components';
 import Text from './Typography';
 import Container from './Container';
 import Button from './Button';
-import { TextBox } from './Forms';
+import { TextBox, Label } from './Forms';
+import Android from '../assets/icons/android.svg';
+import Apple from '../assets/icons/apple.svg';
+import Facebook from '../assets/icons/facebook.svg';
+import Twitter from '../assets/icons/twitter.svg';
+import Instagram from '../assets/icons/instagram.svg';
 
 const TopFooter = styled.div`
   padding: 5rem 0;
@@ -28,6 +33,27 @@ const TopFooter = styled.div`
 
 const BottomFooter = styled.footer`
   padding: 5rem 0;
+  h4{
+    margin-top: 0;
+  }
+  .social svg{
+    width: 3rem;
+    margin: 2rem 1rem 2rem 0;
+    fill: var(--color-brand-1);
+    transition: transform .3s var(--animation-easing);
+    &:hover{
+      transform: scale3d(1.1,1.1,1)
+    }
+  }
+  .copyright{
+    color: #999;
+  }
+  @media(min-width: 720px) {
+    ${Container} {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 `;
 
 const Footer = () => (
@@ -47,25 +73,39 @@ const Footer = () => (
           <form action="https://bookstyleq.us4.list-manage.com/subscribe/post?u=ca7d77d8dd73f52e49e56d814&amp;id=646b5bfa5e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" noValidate>
             <Text as="h4">Subscribe to us</Text>
             <Text>Stay updated on what StyleQ has to offer</Text>
-            <TextBox block name="EMAIL" type="email" id="mce-EMAIL" placeholder="Enter your email address" required />
             <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
               <input type="text" name="b_ca7d77d8dd73f52e49e56d814_646b5bfa5e" tabIndex="-1" />
             </div>
-            <Button primary curvy>Subscribe</Button>
+            <Label variant="wrapper">
+              <TextBox name="EMAIL" type="email" id="mce-EMAIL" placeholder="Enter your email address" required />
+              <Button variant="wrapped">SUBSCRIBE</Button>
+            </Label>
           </form>
-          <Text>
+          <Text className="copyright">
             <span>© {new Date().getFullYear()} StyleQ. All rights reserved</span>
           </Text>
         </div>
         <div>
           <div>
-            <a href="https://play.google.com/store/apps/details?id=ubitrix.styleq&hl=en_US">Get the app on Android</a>
-            <span>Get the app on iPhone (Coming Soon)</span>
+            <Button as="a" variant="primary" href="https://play.google.com/store/apps/details?id=ubitrix.styleq&hl=en_US">
+              <Android />
+              Get the app on Android
+            </Button>
+            <Button variant="primary">
+              <Apple />
+              Get the app on iPhone
+            </Button>
           </div>
-          <Text>
-            <a href="https://www.facebook.com/BookStyleQ/">Facebook</a>
-            <a href="https://twitter.com/bookstyleq">Twitter</a>
-            <a href="https://www.instagram.com/intostyleq/">Instagram</a>
+          <Text className="social">
+            <a href="https://www.facebook.com/BookStyleQ/">
+              <Facebook />
+            </a>
+            <a href="https://twitter.com/bookstyleq">
+              <Twitter />
+            </a>
+            <a href="https://www.instagram.com/intostyleq/">
+              <Instagram />
+            </a>
           </Text>
         </div>
       </Container>

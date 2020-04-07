@@ -4,12 +4,14 @@ import PropTypes from 'prop-types';
 const textStyle = (element) => ({
   h1: () => css`
     font-size: 3.2rem;
+    color: var(--color-brand-1);
     @media(min-width: 520px) {
       font-size: 4.8rem;
     }
   `,
   h2: () => css`
     font-size: 2.8rem;
+    color: var(--color-brand-1);
     @media(min-width: 720px) {
       font-size: 4rem;
     }
@@ -19,6 +21,7 @@ const textStyle = (element) => ({
   `,
   h4: () => css`
     font-size: 2.4rem;
+    color: var(--color-brand-1);
   `,
   h5: () => css`
     font-size: 1.8rem;
