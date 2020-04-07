@@ -18,6 +18,11 @@ const Root = styled.section`
     align-items: center;
     height: inherit;
   }
+  p{
+    max-width: 40rem;
+    margin: 1rem 0 3rem;
+    font-size: 2rem;
+  }
 `;
 
 export default () => (
