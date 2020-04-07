@@ -48,7 +48,7 @@ const BottomFooter = styled.footer`
   .copyright{
     color: #999;
   }
-  @media(min-width: 720px) {
+  @media(min-width: 920px) {
     ${Container} {
       display: flex;
       justify-content: space-between;

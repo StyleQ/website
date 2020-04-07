@@ -6,7 +6,7 @@ const textStyle = (element) => ({
     font-size: 3.2rem;
     color: var(--color-brand-1);
     @media(min-width: 520px) {
-      font-size: 4.8rem;
+      font-size: 5.2rem;
     }
   `,
   h2: () => css`

@@ -38,8 +38,8 @@ const Header = () => (
     <Container>
       <Link to="/"><Logo /></Link>
       <div>
-        <Button>BECOME A STYLIST</Button>
-        <Button as="a" rel="noopener" href="https://my.setmore.com/bookanappointmentv3.do?uniqueKey=dc195bd4-0d63-451f-84ac-4b4ec3ecf5ca">EXPLORE DEMO</Button>
+        <span>BECOME A STYLIST</span>
+        <span as="a" rel="noopener" href="https://my.setmore.com/bookanappointmentv3.do?uniqueKey=dc195bd4-0d63-451f-84ac-4b4ec3ecf5ca">EXPLORE DEMO</span>
         <Button variant="primary">JOIN THE WAITLIST</Button>
       </div>
     </Container>

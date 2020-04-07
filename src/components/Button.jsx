@@ -35,6 +35,7 @@ const Button = styled.button`
   --button-fg: #222;
   display: inline-block;
   min-width: 10rem;
+  margin: 0 0 1rem 0;
   padding: 1.5rem 2rem;
   border: 0;
   border-radius: var(--round-radius-1);
@@ -44,8 +45,10 @@ const Button = styled.button`
   text-align: center;
   cursor: pointer;
   transition: all .2s var(--animation-easing);
-  + a, + button{
-    margin-left: 1rem;
+  @media(min-width: 920px) {
+    + a, + button{
+      margin: 0 0 0 1rem;
+    }
   }
   svg{
     width: 2.5rem;
