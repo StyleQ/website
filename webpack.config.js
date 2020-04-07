@@ -88,6 +88,38 @@ module.exports = env => {
         inject: false,
         hash: true,
         mobile: true,
+        links: [
+          {
+            href: '/apple-touch-icon.png',
+            rel: 'apple-touch-icon',
+            sizes: '180x180'
+          },
+          {
+            href: '/favicon-32x32.png',
+            rel: 'icon',
+            type: 'image/png',
+            sizes: '32x32',
+          },
+          {
+            href: '/favicon-16x16.png',
+            rel: 'icon',
+            type: 'image/png',
+            sizes: '16x16'
+          },
+          {
+            href: '/safari-pinned-tab.svg',
+            rel: 'mask-icon',
+            color: '#a43f6a',
+          },
+          {
+            href: '/site.webmanifest',
+            rel: 'manifest',
+          },
+        ],
+        meta: [
+          { name: 'msapplication-TileColor', content: '#a43f6a' },
+          { name: 'theme-color', content: '#ffffff' },
+        ],
         // Mount ids for main app and modal portal
         appMountIds: ['app', 'modal']
       }),
