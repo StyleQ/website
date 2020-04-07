@@ -12,7 +12,7 @@ const Root = styled.header`
   top: 0;
   z-index: 99999;
   width: 100%;
-  height: 8rem;
+  padding: 1.5rem 0;
   background: #fff;
   box-shadow: 0 .2rem .2rem rgba(0,0,0,.08);
   img{
@@ -30,6 +30,9 @@ const Root = styled.header`
   svg{
     width: 10rem;
     vertical-align: middle;
+  }
+  a,button{
+    margin: 0;
   }
 `;
 
