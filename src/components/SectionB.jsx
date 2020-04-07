@@ -8,7 +8,7 @@ const Root = styled.section`
   text-align: center;
   .intro{
     color: var(--color-brand-4);
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
 `;
 
