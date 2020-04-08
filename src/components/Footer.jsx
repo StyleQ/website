@@ -80,7 +80,7 @@ const Footer = () => (
             </div>
             <Label variant="wrapper">
               <TextBox name="EMAIL" type="email" id="mce-EMAIL" placeholder="Enter your email address" required />
-              <Button variant="wrapped">SUBSCRIBE</Button>
+              <Button variant="wrapped">Subscribe</Button>
             </Label>
           </form>
           <Text as="small" className="copyright">
