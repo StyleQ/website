@@ -2,16 +2,21 @@ import React from 'react';
 import styled from 'styled-components';
 import Container from './Container';
 import Text from './Typography';
+import Pin from './Pin';
 
 const Root = styled.section`
   padding: 10rem 0;
   background: var(--color-brand-2);
   color: #fff;
+  h4{
+    color: var(--color-brand-5);
+  }
 `;
 
 export default () => (
   <Root>
     <Container>
+      <Pin color="var(--color-brand-5)" />
       <Text as="h4">WE PUT THE &ldquo;S&rdquo; IN SIMPLICITY</Text>
       <Text>
         StyleQ is breaching a gap between professional stylists

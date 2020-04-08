@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
   --color-brand-2: #6f325b;
   --color-brand-3: #f3aacb;
   --color-brand-4: #bf88b9;
-  --color-brand-5: #e2a2a2;
+  --color-brand-5: #b7457b;
   --color-brand-6: #f9f3f8;
   --color-bg: #fff;
   --color-fg: #222;

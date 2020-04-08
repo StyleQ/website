@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Container from './Container';
 import Text from './Typography';
 import Divider from '../assets/divider-three.svg';
+import Pin from './Pin';
 
 const Root = styled.section`
   position: relative;
@@ -14,12 +15,17 @@ const Root = styled.section`
     left: 0;
     width: 100vw;
   }
+  ${Container} {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export default () => (
   <Root>
     <Divider />
     <Container>
+      <Pin />
       <Text as="strong" className="intro">Services we offer</Text>
       <Text as="h2">SERVING SATISFACTION AND BEYOND</Text>
     </Container>
