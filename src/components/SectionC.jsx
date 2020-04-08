@@ -1,8 +1,16 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import Container from './Container';
 import Text from './Typography';
+import FormulaIcon from '../assets/icons/simple-formula.svg';
 import Pin from './Pin';
+
+const dropExpose = keyframes`
+  0%{
+    transform: scale(0.9);
+    opacity: .6;
+  }
+`;
 
 const Root = styled.section`
   padding: 10rem 0;
@@ -11,12 +19,19 @@ const Root = styled.section`
   h4{
     color: var(--color-brand-5);
   }
+  svg {
+    transform-origin: center;
+    animation: ${dropExpose} 1s linear infinite;
+    animation-direction: alternate;
+  }
 `;
 
 export default () => (
   <Root>
     <Container>
-      <Pin color="var(--color-brand-5)" />
+      <Pin color="var(--color-brand-5)">
+        <FormulaIcon />
+      </Pin>
       <Text as="h4">WE PUT THE &ldquo;S&rdquo; IN SIMPLICITY</Text>
       <Text>
         StyleQ is breaching a gap between professional stylists
