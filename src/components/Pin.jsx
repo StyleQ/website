@@ -21,7 +21,11 @@ const Pin = ({ children, color = 'var(--color-brand-4)' }) => (
 
 Pin.propTypes = {
   children: PropTypes.node.isRequired,
-  color: PropTypes.string.isRequired,
+  color: PropTypes.string,
+};
+
+Pin.defaultProps = {
+  color: 'var(--color-brand-4)'
 };
 
 export default Pin;
