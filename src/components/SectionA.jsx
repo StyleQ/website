@@ -62,7 +62,7 @@ export default () => (
         </Text>
         <Button responsive variant="primary">REGISTER NOW</Button>
       </div>
-      <img src={Model} alt="StyleQ Model" />
+      <img src="https://res.cloudinary.com/strich/image/upload/v1586322560/model_ips1pp.png" alt="StyleQ Model" />
     </Container>
     <Divider />
   </Root>
