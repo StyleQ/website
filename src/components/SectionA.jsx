@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import Text from './Typography';
 import Container from './Container';
 import Button from './Button';
-import Model from '../assets/model.png';
 import Divider from '../assets/divider-one.svg';
 
 const Root = styled.section`
