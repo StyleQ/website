@@ -46,9 +46,9 @@ export default () => (
       <Grid columns={3}>
         <Column>
           <Map />
-          <Text as="h5">Pick a stylist in your area</Text>
+          <Text as="h5">Pick a Stylist</Text>
           <Text>
-            Where you go and whenever you need one, you can
+            Wherever you go and whenever you need one, you can
             easily select from our pool of skilled stylists
             nearest to you.
           </Text>
@@ -57,9 +57,9 @@ export default () => (
           <Booked />
           <Text as="h5">Book instantly</Text>
           <Text>
-            Booking an appointment through StyleQ can be as
-            instant as a click of a button. You no longer have
-            to wait behind long schedules.
+            Booking an appointment through StyleQ is done with 
+            the click of a button. You no longer have to wait 
+            weeks for an appointment.
           </Text>
         </Column>
         <Column>
