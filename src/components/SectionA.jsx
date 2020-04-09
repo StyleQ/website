@@ -56,8 +56,8 @@ export default () => (
       <div>
         <Text as="h1">Treat Yourself.</Text>
         <Text>
-          StyleQ helps you get quick hairstylists without long waiting
-          schedules and we keep stylists in business with your warm presence.
+          Have a last minute event but your stylist is booked solid?
+          StyleQ has you covered by finding hair stylists near you with same-day availability.
         </Text>
         <Button responsive variant="primary">REGISTER NOW</Button>
       </div>
