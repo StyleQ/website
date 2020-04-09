@@ -2,14 +2,15 @@
 The bookstyleq.com website
 
 ### Tools & Dependencies
-- [Node.js](https://nodejs.org/en/) v12.16.x - JavaScript Runtime
-- [NPM](https://www.npmjs.com/) v6.14.x - Package Manager
-- [React](https://reactjs.org/) v16.13.x - User Interface Library
-- [Webpack](https://webpack.js.org/) v4.42.x - Bundler
-- [Styled Components](https://styled-components.com/) v5.0.x - Styling
-- [Express](https://expressjs.com/) v4.17.x - Optional Web Server
+- [Node.js](https://nodejs.org/en/) v12.x.x - JavaScript Runtime
+- [NPM](https://www.npmjs.com/) v6.x.x - Package Manager
+- [React](https://reactjs.org/) v16.x.x - User Interface Library
+- [Webpack](https://webpack.js.org/) v4.x.x - Bundler
+- [Styled Components](https://styled-components.com/) v5.x.x - Styling
+- [Express](https://expressjs.com/) v4.x.x - Optional Web Server
 - Jest - General testing library
 - Testing Library - React Testing library for component testing
+- Cypress - E2E testing library
 
 The tools listed above are the core technologies that make this project possible. Each of them is linked to their official website for any extra research needs.
 
@@ -19,7 +20,7 @@ You can install node.js from its website above or use a tool like [nvm][1] which
 With node.js and npm installed, clone this repository with your favorite `git` software. Assuming that's the git command-line, you will have:
 
 ```
-git clone https://github.com/StyleQ/website.git
+git clone https://github.com/StyleQ/bookstyleq.com.git
 ```
 
 navigate to the website directory and install all dependencies

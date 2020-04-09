@@ -5,7 +5,6 @@ import Container from './Container';
 import Button from './Button';
 import { TextBox, Label } from './Forms';
 import Android from '../assets/icons/android.svg';
-import Apple from '../assets/icons/apple.svg';
 import Facebook from '../assets/icons/facebook.svg';
 import Twitter from '../assets/icons/twitter.svg';
 import Instagram from '../assets/icons/instagram.svg';
@@ -92,10 +91,6 @@ const Footer = () => (
             <Button as="a" variant="primary" href="https://play.google.com/store/apps/details?id=ubitrix.styleq&hl=en_US">
               <Android />
               Get the app on Android
-            </Button>
-            <Button variant="primary">
-              <Apple />
-              Get the app on iPhone
             </Button>
           </div>
           <Text className="social">

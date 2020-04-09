@@ -31,6 +31,13 @@ const Root = styled.section`
     transform-origin: bottom;
     animation: ${heartRelease} 1s linear infinite;
   }
+  @media not all and (min-resolution:.001dpcm) {
+    @media {
+        #heart-path{
+          animation: none;
+        }
+    }
+  }
   ${Container} {
     display: flex;
     flex-direction: column;
