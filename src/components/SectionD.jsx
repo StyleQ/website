@@ -58,6 +58,24 @@ export default () => (
       </Pin>
       <Text as="strong" className="intro">Services we offer</Text>
       <Text as="h2">SERVING SATISFACTION AND BEYOND</Text>
+      <Grid column={4}>
+        <Column>
+          <Service name="BARBERS" image="feature1.jpg" />
+          <Service name="HAIRSTYLISTS/HAIRCUTS" image="feature2.jpg" />
+        </Column>
+        <Column>
+          <Service name="BRAIDS/LOCKS" image="feature3.jpg" />
+          <Service name="BLOWOUTS" image="feature4.jpeg" />
+        </Column>
+        <Column>
+          <Service name="NATURAL HAIR" image="feature5.jpg" />
+          <Service name="COLOR" image="feature6.jpg" />
+        </Column>
+        <Column>
+          <Service name="MAKEUP" image="feature7.jpg" />
+          <Service name="NAILS" image="feature8.jpg" />
+        </Column>
+      </Grid>
     </Container>
   </Root>
 );
