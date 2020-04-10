@@ -65,15 +65,15 @@ export default () => (
         </Column>
         <Column>
           <Service name="BRAIDS/LOCKS" image={feature3} />
-          <Service name="BLOWOUTS" image="feature4.jpeg" />
+          <Service name="BLOWOUTS" image={feature4} />
         </Column>
         <Column>
-          <Service name="NATURAL HAIR" image="feature5.jpg" />
-          <Service name="COLOR" image="feature6.jpg" />
+          <Service name="NATURAL HAIR" image={feature5} />
+          <Service name="COLOR" image={feature6} />
         </Column>
         <Column>
-          <Service name="MAKEUP" image="feature7.jpg" />
-          <Service name="NAILS" image="feature8.jpg" />
+          <Service name="MAKEUP" image={feature7} />
+          <Service name="NAILS" image={feature8} />
         </Column>
       </Grid>
     </Container>
