@@ -42,10 +42,10 @@ export default () => (
         You don't need to worry about finding a quality stylist that
         meets your unique hair needs on our platform. Clients fill out
         a survey to match them with a stylist that has expertise in
-        their hair type and their desired service. 
+        their hair type and their desired service.
       </Text>
       <Text>
-        Before booking, the you can browse portfolios and reviews for 
+        Before booking, the you can browse portfolios and reviews for
         each available stylist on our roster.
       </Text>
       <Text>

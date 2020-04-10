@@ -57,8 +57,8 @@ export default () => (
           <Booked />
           <Text as="h5">Book instantly</Text>
           <Text>
-            Booking an appointment through StyleQ is done with 
-            the click of a button. You no longer have to wait 
+            Booking an appointment through StyleQ is done with
+            the click of a button. You no longer have to wait
             weeks for an appointment.
           </Text>
         </Column>
