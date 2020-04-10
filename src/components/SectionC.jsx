@@ -45,7 +45,7 @@ export default () => (
         their hair type and their desired service.
       </Text>
       <Text>
-        Before booking, the you can browse portfolios and reviews for
+        Before booking, you can browse portfolios and reviews for
         each available stylist on our roster.
       </Text>
       <Text>
