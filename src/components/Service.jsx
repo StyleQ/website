@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import React from 'react';
 import feature5 from '../assets/feature5.jpg';
 import feature1 from '../assets/feature1.jpg';
