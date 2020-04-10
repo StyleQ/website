@@ -28,6 +28,11 @@
       "no-use-before-define": "off",
       "no-bitwise": "off",
       "no-plusplus": "off",
-      "no-restricted-globals": "off"
+      "no-restricted-globals": "off",
+      "arrow-parens": "off",
+      "react/jsx-props-no-spreading": "off",
+      "react/jsx-one-expression-per-line": "off",
+      "react/no-unescaped-entities": "off",
+      "react/state-in-constructor": "off"
     }
   }
