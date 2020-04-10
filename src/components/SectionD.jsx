@@ -4,6 +4,7 @@ import Container from './Container';
 import Text from './Typography';
 import Divider from '../assets/divider-three.svg';
 import Pin from './Pin';
+import Service from '../components/Service';
 
 const heartRelease = keyframes`
   0%{
