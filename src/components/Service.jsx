@@ -6,15 +6,6 @@ import feature2 from '../assets/feature2.jpg';
 import feature3 from '../assets/feature3.jpg';
 import feature4 from '../assets/feature4.jpeg';
 
-const Image = [
-  'feature5.jpg',
-  'feature1.jpg',
-  'feature2.jpg',
-  'feature3.jpg',
-  'feature4.jpeg'
-];
-
-
 const figStyle = {
     float: 'left',
     textAlign: 'center',
@@ -37,19 +28,15 @@ const imgStyle = {
 };
 
 
-export class Service extends React.PureComponent {
-  render() {
-    const name = '';
-
-    return (
-      <div>
-        <figure style={figStyle}>
-          <img style={imgStyle} src={feature4} alt="service" />
-          <figcaption style={figcaptionStyle}>{this.props.name}</figcaption>
-        </figure>
-      </div>
-    );
-  }
-}
+export const Service = (props) => {
+return (
+    <div>
+      <figure style={figStyle}>
+        <img style={imgStyle} src={props.image} alt="services"/> 
+        <figcaption style={figcaptionStyle}>{props.name}</figcaption>
+      </figure>
+    </div>
+  );
+};
 
 export default Service;
