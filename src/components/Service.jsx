@@ -4,6 +4,9 @@ import feature1 from '../assets/feature1.jpg';
 import feature2 from '../assets/feature2.jpg';
 import feature3 from '../assets/feature3.jpg';
 import feature4 from '../assets/feature4.jpeg';
+import feature6 from '../assets/feature6.jpg';
+import feature7 from '../assets/feature7.jpg';
+import feature8 from '../assets/feature8.jpg';
 
 const figStyle = {
     float: 'left',

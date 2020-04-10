@@ -60,11 +60,11 @@ export default () => (
       <Text as="h2">SERVING SATISFACTION AND BEYOND</Text>
       <Grid column={4}>
         <Column>
-          <Service name="BARBERS" image="feature1.jpg" />
-          <Service name="HAIRSTYLISTS/HAIRCUTS" image="feature2.jpg" />
+          <Service name="BARBERS" image={feature1} />
+          <Service name="HAIRSTYLISTS/HAIRCUTS" image={feature2} />
         </Column>
         <Column>
-          <Service name="BRAIDS/LOCKS" image="feature3.jpg" />
+          <Service name="BRAIDS/LOCKS" image={feature3} />
           <Service name="BLOWOUTS" image="feature4.jpeg" />
         </Column>
         <Column>
