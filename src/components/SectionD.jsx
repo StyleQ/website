@@ -5,6 +5,7 @@ import Text from './Typography';
 import Divider from '../assets/divider-three.svg';
 import Pin from './Pin';
 import Service from '../components/Service';
+import Grid from '../components/grid'; 
 
 const heartRelease = keyframes`
   0%{
