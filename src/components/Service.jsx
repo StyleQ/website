@@ -2,13 +2,9 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 
 const Figure = styled.figure`
-    float: left;
-    text-align: center;
-    text-indent: 0 ;
-    border: thin silver solid;
-    margin: 0.5em;
-    borderRadius: 8px;
-    background: white;
+    box-shadow: 0 4.4px 12.5px rgba(0, 0, 0, 0.035),
+    0 35px 100px rgba(0, 0, 0, 0.07);
+    border-radius: var(--round-radius-2);
 `;
 
 const Figcaption = styled.figcaption`
@@ -16,22 +12,21 @@ const Figcaption = styled.figcaption`
 `;
 
 const Img = styled.img`
-    borderTopLeftRadius: 8px;
-    borderTopRightRadius: 8px;
+    border-top-left-radius: var(--round-radius-2);
+    border-top-right-radius: var(--round-radius-2);
     maxWidth: 270px;
     height: 270px;
 `;
 
 
-export const Service = (props) => {
-return (
+const Service = ({ name, image }) = (
     <div>
       <Figure>
-        <Img style={imgStyle} src={props.image} alt={props.name}/>
-        <Figcaption style={figcaptionStyle}>{props.name}</Figcaption>
+        <Img src={image} alt={name} />
+        <Figcaption>{name}</Figcaption>
       </Figure>
     </div>
-  );
-};
+
+)
 
 export default Service;

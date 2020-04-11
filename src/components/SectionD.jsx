@@ -4,8 +4,8 @@ import Container from './Container';
 import Text from './Typography';
 import Divider from '../assets/divider-three.svg';
 import Pin from './Pin';
-import Service from '../components/Service';
-import Grid from '../components/grid';
+import Service from './Service';
+import { Grid, Column } from './Grid';
 import feature5 from '../assets/feature5.jpg';
 import feature1 from '../assets/feature1.jpg';
 import feature2 from '../assets/feature2.jpg';
@@ -69,20 +69,20 @@ export default () => (
       <Text as="h2">SERVING SATISFACTION AND BEYOND</Text>
       <Grid column={4}>
         <Column>
-          <Service name="BARBERS" image={feature1} alt="BARBERS" />
-          <Service name="HAIRSTYLISTS/HAIRCUTS" image={feature2} alt="HAIRSTYLISTS/HAIRCUTS" />
+          <Service name="BARBERS" image={feature1} />
+          <Service name="HAIRSTYLISTS/HAIRCUTS" image={feature2} alt={name} />
         </Column>
         <Column>
-          <Service name="BRAIDS/LOCKS" image={feature3} alt="BRAIDS/LOCKS" />
-          <Service name="BLOWOUTS" image={feature4} alt="BLOWOUTS" />
+          <Service name="BRAIDS/LOCKS" image={feature3} alt={name} />
+          <Service name="BLOWOUTS" image={feature4} alt={name} />
         </Column>
         <Column>
-          <Service name="NATURAL HAIR" image={feature5} alt="NATURAL HAIR" />
-          <Service name="COLOR" image={feature6} alt="COLOR" />
+          <Service name="NATURAL HAIR" image={feature5} alt={name} />
+          <Service name="COLOR" image={feature6} />
         </Column>
         <Column>
-          <Service name="MAKEUP" image={feature7} alt="MAKEUP" />
-          <Service name="NAILS" image={feature8} alt="NAILS" />
+          <Service name="MAKEUP" image={feature7} alt={name} />
+          <Service name="NAILS" image={feature8} alt={name} />
         </Column>
       </Grid>
     </Container>
