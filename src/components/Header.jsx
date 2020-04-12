@@ -1,9 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Logo from '../assets/styleq-logo.svg';
 import Button from './Button';
 import Container from './Container';
+import BurgerMenu from './BurgerMenu';
+import CollapseMenu from './CollapseMenu';
 
 const Root = styled.header`
   display: flex;
@@ -36,17 +39,46 @@ const Root = styled.header`
   }
 `;
 
-const Header = () => (
-  <Root>
-    <Container>
-      <Link to="/"><Logo /></Link>
-      <div>
-        {/* <span>BECOME A STYLIST</span>
-        <span as="a" rel="noopener" href="https://my.setmore.com/bookanappointmentv3.do?uniqueKey=dc195bd4-0d63-451f-84ac-4b4ec3ecf5ca">EXPLORE DEMO</span> */}
-        <Button variant="primary">JOIN THE WAITLIST</Button>
-      </div>
-    </Container>
-  </Root>
+const BurgerWrapper = styled.div`
+  margin: auto 0;
+
+  @media (min-width: 769px) {
+    display: none;
+  }
+`;
+
+const Header = ({ navbarState, handleNavbar }) => (
+  <>
+    <Root>
+      <Container>
+        <Link to="/"><Logo /></Link>
+        <div>
+          {/* <span>BECOME A STYLIST</span>
+          <span as="a" rel="noopener" href="https://my.setmore.com/bookanappointmentv3.do?uniqueKey=dc195bd4-0d63-451f-84ac-4b4ec3ecf5ca">EXPLORE DEMO</span> */}
+          <Button variant="primary">JOIN THE WAITLIST</Button>
+        </div>
+        <BurgerWrapper>
+          <BurgerMenu
+            navbarState={navbarState}
+            handleNavbar={handleNavbar}
+          />
+        </BurgerWrapper>
+      </Container>
+    </Root>
+    <CollapseMenu
+      navbarState={navbarState}
+      handleNavbar={handleNavbar}
+    />
+  </>
 );
+
+Header.propTypes = {
+  navbarState: PropTypes.bool,
+  handleNavbar: PropTypes.func.isRequired,
+};
+
+Header.defaultProps = {
+  navbarState: false,
+};
 
 export default Header;

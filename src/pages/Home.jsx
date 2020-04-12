@@ -8,12 +8,13 @@ import SectionC from '../components/SectionC';
 import SectionD from '../components/SectionD';
 import SectionE from '../components/SectionE';
 
-function Home({ navbarState }) {
+function Home({ navbarState, handleNavbar }) {
   return (
     <Layout title="Home">
-      <Header
+      <Header>
         navbarState={navbarState}
-      />
+        handleNavbar={handleNavbar}
+      </Header>
       <SectionA />
       <SectionB />
       <SectionC />
@@ -26,6 +27,7 @@ function Home({ navbarState }) {
 
 Home.propTypes = {
   navbarState: PropTypes.bool,
+  handleNavbar: PropTypes.func.isRequired,
 };
 
 Home.defaultProps = {
