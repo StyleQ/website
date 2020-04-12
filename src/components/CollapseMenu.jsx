@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const CollapseWrapper = styled.div`
-  background: #2d3436;
+  background: #ffffff;
   position: fixed;
-  top: 4.5rem;
+  top: 7.0rem;
   left: 0;
   right: 0;
 `;
@@ -21,14 +21,13 @@ const NavLinks = styled.ul`
   & a {
     font-size: 1.4rem;
     line-height: 2;
-    color: #dfe6e9;
+    color: #000000;
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
 
     &:hover {
-      color: #fdcb6e;
-      border-bottom: 1px solid #fdcb6e;
+      border-bottom: 1px solid #000000;
     }
   }
 `;
@@ -38,10 +37,9 @@ const CollapseMenu = ({ navbarState, handleNavbar }) => {
     return (
       <CollapseWrapper>
         <NavLinks>
-          <li><a href="/" onClick={handleNavbar}>link n2</a></li>
-          <li><a href="/" onClick={handleNavbar}>link n1</a></li>
-          <li><a href="/" onClick={handleNavbar}>link n3</a></li>
-          <li><a href="/" onClick={handleNavbar}>link n4</a></li>
+          <li><a href="/" onClick={handleNavbar}>Become a Stylist</a></li>
+          <li><a href="/" onClick={handleNavbar}>Our Blog</a></li>
+          <li><a href="/" onClick={handleNavbar}>Join the Waitlist</a></li>
         </NavLinks>
       </CollapseWrapper>
     );

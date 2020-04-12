@@ -39,6 +39,26 @@ const Root = styled.header`
   }
 `;
 
+const NavLinks = styled.ul`
+  justify-self: end;
+  list-style-type: none;
+  margin: auto 0;
+
+  & a {
+    color: #000000;
+    font-weight: 400;
+    margin: 0 1.5rem;
+
+    &:hover {
+      border-bottom: 1px solid #000000;
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
 const BurgerWrapper = styled.div`
   margin: auto 0;
 
@@ -48,28 +68,27 @@ const BurgerWrapper = styled.div`
 `;
 
 const Header = ({ navbarState, handleNavbar }) => (
-  <>
-    <Root>
-      <Container>
-        <Link to="/"><Logo /></Link>
-        <div>
-          {/* <span>BECOME A STYLIST</span>
-          <span as="a" rel="noopener" href="https://my.setmore.com/bookanappointmentv3.do?uniqueKey=dc195bd4-0d63-451f-84ac-4b4ec3ecf5ca">EXPLORE DEMO</span> */}
-          <Button variant="primary">JOIN THE WAITLIST</Button>
-        </div>
-        <BurgerWrapper>
-          <BurgerMenu
-            navbarState={navbarState}
-            handleNavbar={handleNavbar}
-          />
-        </BurgerWrapper>
-      </Container>
-    </Root>
+  <Root>
+    <Container>
+      <Link to="/"><Logo /></Link>
+      <NavLinks>
+        <a href="/">Become a Stylist</a>
+        <a href="/">Our Blog</a>
+        {/* <a rel="noopener" href="https://my.setmore.com/bookanappointmentv3.do?uniqueKey=dc195bd4-0d63-451f-84ac-4b4ec3ecf5ca">EXPLORE DEMO</a> */}
+        <Button variant="primary">JOIN THE WAITLIST</Button>
+      </NavLinks>
+      <BurgerWrapper>
+        <BurgerMenu
+          navbarState={navbarState}
+          handleNavbar={handleNavbar}
+        />
+      </BurgerWrapper>
+    </Container>
     <CollapseMenu
       navbarState={navbarState}
       handleNavbar={handleNavbar}
     />
-  </>
+  </Root>
 );
 
 Header.propTypes = {
