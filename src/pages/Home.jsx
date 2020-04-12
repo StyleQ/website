@@ -11,10 +11,10 @@ import SectionE from '../components/SectionE';
 function Home({ navbarState, handleNavbar }) {
   return (
     <Layout title="Home">
-      <Header>
+      <Header
         navbarState={navbarState}
         handleNavbar={handleNavbar}
-      </Header>
+      />
       <SectionA />
       <SectionB />
       <SectionC />
