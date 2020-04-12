@@ -44,12 +44,8 @@ const BurgerMenu = ({ navbarState, handleNavbar }) => (
 );
 
 BurgerMenu.propTypes = {
-  navbarState: PropTypes.bool,
+  navbarState: PropTypes.bool.isRequired,
   handleNavbar: PropTypes.func.isRequired,
-};
-
-BurgerMenu.defaultProps = {
-  navbarState: false,
 };
 
 export default BurgerMenu;
