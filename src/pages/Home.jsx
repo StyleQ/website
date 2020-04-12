@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Layout from '../templates/Layout';
 import Header from '../components/Header';
 import SectionA from '../components/SectionA';
@@ -7,10 +8,12 @@ import SectionC from '../components/SectionC';
 import SectionD from '../components/SectionD';
 import SectionE from '../components/SectionE';
 
-function Home() {
+function Home({ navbarState }) {
   return (
     <Layout title="Home">
-      <Header />
+      <Header
+        navbarState={navbarState}
+      />
       <SectionA />
       <SectionB />
       <SectionC />
@@ -19,5 +22,14 @@ function Home() {
     </Layout>
   );
 }
+
+
+Home.propTypes = {
+  navbarState: PropTypes.bool,
+};
+
+Home.defaultProps = {
+  navbarState: false,
+};
 
 export default Home;
