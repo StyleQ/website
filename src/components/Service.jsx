@@ -11,7 +11,6 @@ const Figure = styled.figure`
 
 const Figcaption = styled.figcaption`
   padding: 2rem;
-  word-break: break-word;
 `;
 
 const Img = styled.img`
