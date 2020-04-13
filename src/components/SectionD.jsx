@@ -6,14 +6,6 @@ import Divider from '../assets/divider-three.svg';
 import Pin from './Pin';
 import Service from './Service';
 import { Grid, Column } from './Grid';
-import feature5 from '../assets/feature5.jpg';
-import feature1 from '../assets/feature1.jpg';
-import feature2 from '../assets/feature2.jpg';
-import feature3 from '../assets/feature3.jpg';
-import feature4 from '../assets/feature4.jpeg';
-import feature6 from '../assets/feature6.jpg';
-import feature7 from '../assets/feature7.jpg';
-import feature8 from '../assets/feature8.jpg';
 
 
 const heartRelease = keyframes`
@@ -68,28 +60,28 @@ export default () => (
       <Text as="h2">SERVING SATISFACTION AND BEYOND</Text>
       <Grid columns={4}>
         <Column>
-          <Service name="BARBERS" image={feature1} />
+          <Service name="BARBERS" image="https://res.cloudinary.com/strich/image/upload/v1586812341/styleq-barber_qdzqvx.jpg" />
         </Column>
         <Column>
-          <Service name="HAIRSTYLISTS/HAIRCUTS" image={feature2} />
+          <Service name="HAIRSTYLISTS/HAIRCUTS" image="https://res.cloudinary.com/strich/image/upload/v1586812341/styleq-hairstylist_ekzegg.jpg" />
         </Column>
         <Column>
-          <Service name="BRAIDS/LOCKS" image={feature3} />
+          <Service name="BRAIDS/LOCKS" image="https://res.cloudinary.com/strich/image/upload/v1586812341/styleq-braids_urotsx.jpg" />
         </Column>
         <Column>
-          <Service name="BLOWOUTS" image={feature4} />
+          <Service name="BLOWOUTS" image="https://res.cloudinary.com/strich/image/upload/v1586812341/styleq-blowout_bcyptx.jpg" />
         </Column>
         <Column>
-          <Service name="NATURAL HAIR" image={feature5} />
+          <Service name="NATURAL HAIR" image="https://res.cloudinary.com/strich/image/upload/v1586812341/styleq-natural_zku8ba.jpg" />
         </Column>
         <Column>
-          <Service name="COLOR" image={feature6} />
+          <Service name="COLOR" image="https://res.cloudinary.com/strich/image/upload/v1586812341/styleq-color_nretgd.jpg" />
         </Column>
         <Column>
-          <Service name="MAKEUP" image={feature7} />
+          <Service name="MAKEUP" image="https://res.cloudinary.com/strich/image/upload/v1586812341/styleq-makeup_yghv6u.jpg" />
         </Column>
         <Column>
-          <Service name="NAILS" image={feature8} />
+          <Service name="NAILS" image="https://res.cloudinary.com/strich/image/upload/v1586812341/styleq-nails_ltfsrm.jpg" />
         </Column>
       </Grid>
     </Container>
