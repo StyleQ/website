@@ -15,7 +15,6 @@ const Img = styled.img`
     border-top-left-radius: var(--round-radius-2);
     border-top-right-radius: var(--round-radius-2);
     width: 100%;
-
 `;
 
 
