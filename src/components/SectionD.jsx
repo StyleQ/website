@@ -4,6 +4,17 @@ import Container from './Container';
 import Text from './Typography';
 import Divider from '../assets/divider-three.svg';
 import Pin from './Pin';
+import Service from './Service';
+import { Grid, Column } from './Grid';
+import feature5 from '../assets/feature5.jpg';
+import feature1 from '../assets/feature1.jpg';
+import feature2 from '../assets/feature2.jpg';
+import feature3 from '../assets/feature3.jpg';
+import feature4 from '../assets/feature4.jpeg';
+import feature6 from '../assets/feature6.jpg';
+import feature7 from '../assets/feature7.jpg';
+import feature8 from '../assets/feature8.jpg';
+
 
 const heartRelease = keyframes`
   0%{
@@ -56,6 +67,32 @@ export default () => (
       </Pin>
       <Text as="strong" className="intro">Services we offer</Text>
       <Text as="h2">SERVING SATISFACTION AND BEYOND</Text>
+      <Grid columns={4}>
+        <Column>
+          <Service name="BARBERS" image={feature1} />
+        </Column>
+        <Column>
+          <Service name="HAIRSTYLISTS/HAIRCUTS" image={feature2} />
+        </Column>
+        <Column>
+          <Service name="BRAIDS/LOCKS" image={feature3} />
+        </Column>
+        <Column>
+          <Service name="BLOWOUTS" image={feature4} />
+        </Column>
+        <Column>
+          <Service name="NATURAL HAIR" image={feature5} />
+        </Column>
+        <Column>
+          <Service name="COLOR" image={feature6} />
+        </Column>
+        <Column>
+          <Service name="MAKEUP" image={feature7} />
+        </Column>
+        <Column>
+          <Service name="NAILS" image={feature8} />
+        </Column>
+      </Grid>
     </Container>
   </Root>
 );
