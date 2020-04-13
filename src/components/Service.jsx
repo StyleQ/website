@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 const Figure = styled.figure`
     box-shadow: 0 4.4px 12.5px rgba(0, 0, 0, 0.035),
@@ -8,25 +8,22 @@ const Figure = styled.figure`
 `;
 
 const Figcaption = styled.figcaption`
-    padding: 10%;
+    padding: 2rem;
 `;
 
 const Img = styled.img`
     border-top-left-radius: var(--round-radius-2);
     border-top-right-radius: var(--round-radius-2);
-    maxWidth: 270px;
-    height: 270px;
+    width: 100%;
+
 `;
 
 
-const Service = ({ name, image }) = (
-    <div>
-      <Figure>
-        <Img src={image} alt={name} />
-        <Figcaption>{name}</Figcaption>
-      </Figure>
-    </div>
-
-)
+const Service = ({ name, image }) => (
+  <Figure>
+    <Img src={image} alt={name} />
+    <Figcaption>{name}</Figcaption>
+  </Figure>
+);
 
 export default Service;

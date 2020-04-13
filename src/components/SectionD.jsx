@@ -67,22 +67,30 @@ export default () => (
       </Pin>
       <Text as="strong" className="intro">Services we offer</Text>
       <Text as="h2">SERVING SATISFACTION AND BEYOND</Text>
-      <Grid column={4}>
+      <Grid columns={4}>
         <Column>
           <Service name="BARBERS" image={feature1} />
-          <Service name="HAIRSTYLISTS/HAIRCUTS" image={feature2} alt={name} />
         </Column>
         <Column>
-          <Service name="BRAIDS/LOCKS" image={feature3} alt={name} />
-          <Service name="BLOWOUTS" image={feature4} alt={name} />
+          <Service name="HAIRSTYLISTS/HAIRCUTS" image={feature2} />
         </Column>
         <Column>
-          <Service name="NATURAL HAIR" image={feature5} alt={name} />
+          <Service name="BRAIDS/LOCKS" image={feature3} />
+        </Column>
+        <Column>
+          <Service name="BLOWOUTS" image={feature4} />
+        </Column>
+        <Column>
+          <Service name="NATURAL HAIR" image={feature5} />
+        </Column>
+        <Column>
           <Service name="COLOR" image={feature6} />
         </Column>
         <Column>
-          <Service name="MAKEUP" image={feature7} alt={name} />
-          <Service name="NAILS" image={feature8} alt={name} />
+          <Service name="MAKEUP" image={feature7} />
+        </Column>
+        <Column>
+          <Service name="NAILS" image={feature8} />
         </Column>
       </Grid>
     </Container>
