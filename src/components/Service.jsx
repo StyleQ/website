@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const Figure = styled.figure`
     box-shadow: 0 4.4px 12.5px rgba(0, 0, 0, 0.035),
@@ -17,12 +18,16 @@ const Img = styled.img`
     width: 100%;
 `;
 
-
 const Service = ({ name, image }) => (
   <Figure>
     <Img src={image} alt={name} />
     <Figcaption>{name}</Figcaption>
   </Figure>
 );
+
+Service.propTypes = {
+  name: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+};
 
 export default Service;
