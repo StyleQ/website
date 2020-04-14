@@ -83,6 +83,9 @@ const Header = ({ navbarState, handleNavbar }) => (
           handleNavbar={handleNavbar}
         />
       </BurgerWrapper>
+      <div>
+        <Button variant="primary" as="a" href="https://my.setmore.com/bookanappointmentv3.do?uniqueKey=dc195bd4-0d63-451f-84ac-4b4ec3ecf5ca">Get started</Button>
+      </div>
     </Container>
     <CollapseMenu
       navbarState={navbarState}

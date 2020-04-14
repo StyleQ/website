@@ -3,11 +3,16 @@ import styled, { css } from 'styled-components';
 // 1 Dimension grids
 export const Grid = styled.div`
   display: grid;
-  ${({ columns = 1 }) => columns && css`
-    grid-template-columns: repeat(auto-fit, minmax(calc(var(--site-width) / ${columns} - 15%), 1fr));
-  `}
-  ${({ responsive }) => responsive === false && css`
-    display: flex;
+  ${({ responsive, columns = 1 }) => responsive !== 'fixed' && css`
+    @media(min-width: 720px) {
+      grid-template-columns: repeat(${Math.floor(columns / 2)}, 1fr);
+    }
+    @media(min-width: 1020px) {
+      grid-template-columns: repeat(${Math.floor(columns / 2 + 1)}, 1fr);
+    }
+    @media(min-width: 1240px) {
+      grid-template-columns: repeat(${columns}, 1fr);
+    }
   `}
   ${({ gap = '30px' }) => gap && css`
     grid-gap: ${gap};
@@ -15,5 +20,4 @@ export const Grid = styled.div`
 `;
 
 export const Column = styled.div`
-  flex: 1;
 `;

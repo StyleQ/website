@@ -59,7 +59,7 @@ export default () => (
           Have a last minute event but your stylist is booked solid?
           StyleQ has you covered by finding hair stylists near you with same-day availability.
         </Text>
-        <Button responsive variant="primary">REGISTER NOW</Button>
+        <Button responsive variant="primary" as="a" href="https://my.setmore.com/bookanappointmentv3.do?uniqueKey=dc195bd4-0d63-451f-84ac-4b4ec3ecf5ca">BOOK YOUR SPOT</Button>
       </div>
       <img src="https://res.cloudinary.com/strich/image/upload/v1586322560/model_ips1pp.png" alt="StyleQ Model" />
     </Container>
