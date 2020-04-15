@@ -119,6 +119,7 @@ module.exports = env => {
         meta: [
           { name: 'msapplication-TileColor', content: '#a43f6a' },
           { name: 'theme-color', content: '#ffffff' },
+          { name: 'description', content: 'StyleQ connects users to beauty and wellness professionals, instantly. StyleQ empowers local salons and independent stylists to generate profitable appointments during gaps in their schedules, and allows users to book appointments on the spot.'},
         ],
         // Mount ids for main app and modal portal
         appMountIds: ['app', 'modal']
