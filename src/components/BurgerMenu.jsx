@@ -34,7 +34,7 @@ const Wrapper = styled.div`
 `;
 
 const BurgerMenu = ({ navbarState, handleNavbar }) => (
-  <Wrapper onClick={handleNavbar}>
+  <Wrapper role="navigation" aria-expanded={navbarState} aria-controls="menu" onClick={handleNavbar}>
     <div className={navbarState ? 'open' : ''}>
       <span>&nbsp;</span>
       <span>&nbsp;</span>
