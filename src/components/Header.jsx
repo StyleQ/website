@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Logo from '../assets/styleq-logo.svg';
 import Button from './Button';
 import Container from './Container';
+import BurgerMenu from './BurgerMenu';
+import CollapseMenu from './CollapseMenu';
 
 const Root = styled.header`
   display: flex;
@@ -36,15 +39,55 @@ const Root = styled.header`
   }
 `;
 
-const Header = () => (
-  <Root>
-    <Container>
-      <Link to="/"><Logo /></Link>
-      <div>
-        <Button variant="primary" as="a" href="https://my.setmore.com/bookanappointmentv3.do?uniqueKey=dc195bd4-0d63-451f-84ac-4b4ec3ecf5ca">Get started</Button>
-      </div>
-    </Container>
-  </Root>
-);
+const NavLinks = styled.ul`
+  justify-self: end;
+  list-style-type: none;
+  margin: auto 0;
+
+  a {
+    font-weight: 400;
+    margin: 0 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+const BurgerWrapper = styled.div`
+  margin: auto 0;
+
+  @media (min-width: 769px) {
+    display: none;
+  }
+`;
+
+const Header = () => {
+  const [navBarOpen, setnavBarOpen] = useState(false);
+  const handleNavbar = () => setnavBarOpen(!navBarOpen);
+
+  return (
+    <Root>
+      <Container>
+        <Link to="/"><Logo /></Link>
+        <NavLinks>
+          <a href="/">Become a Stylist</a>
+          <a href="https://blog.bookstyleq.com">Our Blog</a>
+          <Button variant="primary" as="a" href="https://my.setmore.com/bookanappointmentv3.do?uniqueKey=dc195bd4-0d63-451f-84ac-4b4ec3ecf5ca">Get started</Button>
+        </NavLinks>
+        <BurgerWrapper>
+          <BurgerMenu
+            navbarState={navBarOpen}
+            handleNavbar={handleNavbar}
+          />
+        </BurgerWrapper>
+      </Container>
+      <CollapseMenu
+        navbarState={navBarOpen}
+        handleNavbar={handleNavbar}
+      />
+    </Root>
+  );
+};
 
 export default Header;
