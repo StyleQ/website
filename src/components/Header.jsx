@@ -44,14 +44,9 @@ const NavLinks = styled.ul`
   list-style-type: none;
   margin: auto 0;
 
-  & a {
-    color: #000000;
+  a {
     font-weight: 400;
     margin: 0 1.5rem;
-
-    &:hover {
-      border-bottom: 1px solid #000000;
-    }
   }
 
   @media (max-width: 768px) {
@@ -77,8 +72,7 @@ const Header = () => {
         <Link to="/"><Logo /></Link>
         <NavLinks>
           <a href="/">Become a Stylist</a>
-          <a href="/">Our Blog</a>
-          {/* <a rel="noopener" href="https://my.setmore.com/bookanappointmentv3.do?uniqueKey=dc195bd4-0d63-451f-84ac-4b4ec3ecf5ca">EXPLORE DEMO</a> */}
+          <a href="https://blog.bookstyleq.com">Our Blog</a>
           <Button variant="primary" as="a" href="https://my.setmore.com/bookanappointmentv3.do?uniqueKey=dc195bd4-0d63-451f-84ac-4b4ec3ecf5ca">Get started</Button>
         </NavLinks>
         <BurgerWrapper>

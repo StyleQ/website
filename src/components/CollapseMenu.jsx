@@ -14,7 +14,7 @@ const NavLinks = styled.ul`
   list-style-type: none;
   padding: 2rem 1rem 2rem 2rem;
 
-  & li {
+  li {
     transition: all 300ms linear 0s;
   }
 
@@ -38,8 +38,8 @@ const CollapseMenu = ({ navbarState, handleNavbar }) => {
       <CollapseWrapper>
         <NavLinks>
           <li><a href="/" onClick={handleNavbar}>Become a Stylist</a></li>
-          <li><a href="/" onClick={handleNavbar}>Our Blog</a></li>
-          <li><a href="/" onClick={handleNavbar}>Join the Waitlist</a></li>
+          <li><a href="https://blog.bookstyleq.com" onClick={handleNavbar}>Our Blog</a></li>
+          <li><a href="https://my.setmore.com/bookanappointmentv3.do?uniqueKey=dc195bd4-0d63-451f-84ac-4b4ec3ecf5ca" onClick={handleNavbar}>Get Started</a></li>
         </NavLinks>
       </CollapseWrapper>
     );
