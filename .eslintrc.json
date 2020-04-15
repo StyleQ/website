@@ -33,7 +33,6 @@
       "react/jsx-props-no-spreading": "off",
       "react/jsx-one-expression-per-line": "off",
       "react/no-unescaped-entities": "off",
-      "react/state-in-constructor": "off",
-      "react/destructuring-assignment": ["off", "always", { "ignoreClassFields": true }]
+      "react/state-in-constructor": "off"
     }
   }
