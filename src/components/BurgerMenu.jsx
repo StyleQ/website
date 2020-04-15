@@ -2,13 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const Wrapper = styled.div`
+const Wrapper = styled.button`
     position: relative;
     padding-top: .7rem;
     cursor: pointer;
     display: block;
+    border: none;
+    background-color: #ffffff;
 
-    & span {
+    div {
+      font-size: 0;
+      text-indent: -9999px;
+    }
+
+    span {
         background: var(--color-brand-1);
         display: block;
         position: relative;
@@ -34,8 +41,8 @@ const Wrapper = styled.div`
 `;
 
 const BurgerMenu = ({ navbarState, handleNavbar }) => (
-  <Wrapper role="navigation" aria-expanded={navbarState} aria-controls="menu" onClick={handleNavbar}>
-    <div className={navbarState ? 'open' : ''}>
+  <Wrapper aria-expanded={navbarState} aria-controls="menu" onClick={handleNavbar}>
+    <div className={navbarState ? 'open' : ''}>Menu
       <span>&nbsp;</span>
       <span>&nbsp;</span>
       <span>&nbsp;</span>
