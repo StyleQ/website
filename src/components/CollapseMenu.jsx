@@ -48,12 +48,8 @@ const CollapseMenu = ({ navbarState, handleNavbar }) => {
 };
 
 CollapseMenu.propTypes = {
-  navbarState: PropTypes.bool,
+  navbarState: PropTypes.bool.isRequired,
   handleNavbar: PropTypes.func.isRequired,
-};
-
-CollapseMenu.defaultProps = {
-  navbarState: false,
 };
 
 export default CollapseMenu;
