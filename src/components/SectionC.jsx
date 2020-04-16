@@ -52,6 +52,9 @@ export default () => (
         Hectic schedules shouldn't prevent you from looking your best!
         Let StyleQ make booking your next service simple and stress-free.
       </Text>
+      <video width="320" controls>
+        <source src="https://res.cloudinary.com/strich/video/upload/v1586997169/1rnu8-6mhff_vaweam.mp4" type="video/mp4" />
+      </video>
     </Container>
   </Root>
 );
