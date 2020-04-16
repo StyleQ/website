@@ -30,7 +30,6 @@ const Video = styled.video`
   width: 100%;
   border-top-left-radius: var(--round-radius-2);
   border-top-right-radius: var(--round-radius-2);
-  height: 25.25rem;
   object-fit: cover;
 `;
 
