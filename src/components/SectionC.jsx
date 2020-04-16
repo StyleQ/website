@@ -26,6 +26,10 @@ const Root = styled.section`
   }
 `;
 
+const Video = styled.video`
+  width: 100%;
+`;
+
 export default () => (
   <Root>
     <Container>
@@ -52,7 +56,7 @@ export default () => (
         Hectic schedules shouldn't prevent you from looking your best!
         Let StyleQ make booking your next service simple and stress-free.
       </Text>
-      <video width="100%" controls>
+      <Video controls>
         <source src="https://res.cloudinary.com/strich/video/upload/v1586997169/1rnu8-6mhff_vaweam.mp4" type="video/mp4" />
         <track
           default
@@ -60,7 +64,7 @@ export default () => (
           srcLang="en"
           src="https://res.cloudinary.com/strich/video/upload/v1586997169/1rnu8-6mhff_vaweam.vtt"
         />
-      </video>
+      </Video>
     </Container>
   </Root>
 );
