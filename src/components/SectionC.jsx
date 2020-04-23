@@ -31,6 +31,7 @@ const Video = styled.video`
   border-radius: var(--round-radius-2);
   box-shadow: 0 4.4px 12.5px rgba(0, 0, 0, 0.035),
   0 35px 100px rgba(0, 0, 0, 0.07);
+  height: 25.25rem;
   object-fit: cover;
 `;
 
