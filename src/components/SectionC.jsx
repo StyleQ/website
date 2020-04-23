@@ -4,6 +4,7 @@ import Container from './Container';
 import Text from './Typography';
 import FormulaIcon from '../assets/icons/simple-formula.svg';
 import Pin from './Pin';
+import { Grid, Column } from './Grid';
 
 const dropExpose = keyframes`
   0%{
