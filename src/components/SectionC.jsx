@@ -39,38 +39,44 @@ const Video = styled.video`
 export default () => (
   <Root>
     <Container>
-      <Pin color="var(--color-brand-5)">
-        <FormulaIcon />
-      </Pin>
-      <Text as="h4">WE PUT THE &ldquo;S&rdquo; IN SIMPLICITY</Text>
-      <Text>
-        StyleQ is bridging the gap between professional stylists
-        and customers. We help you find experienced, local stylists
-        last minute while helping stylists fill empty chairs.
-      </Text>
-      <Text>
-        You don't need to worry about finding a quality stylist that
-        meets your unique hair needs on our platform. Clients fill out
-        a survey to match them with a stylist that has expertise in
-        their hair type and their desired service.
-      </Text>
-      <Text>
-        Before booking, you can browse portfolios and reviews for
-        each available stylist on our roster.
-      </Text>
-      <Text>
-        Hectic schedules shouldn't prevent you from looking your best!
-        Let StyleQ make booking your next service simple and stress-free.
-      </Text>
-      <Video controls poster="https://res.cloudinary.com/strich/image/upload/v1587662805/styleq-video-poster_q5cvy7.jpg">
-        <source src="https://res.cloudinary.com/strich/video/upload/v1586997169/1rnu8-6mhff_vaweam.mp4" type="video/mp4" />
-        <track
-          default
-          kind="captions"
-          srcLang="en"
-          src="https://res.cloudinary.com/strich/video/upload/v1586997169/1rnu8-6mhff_vaweam.vtt"
-        />
-      </Video>
+      <Grid columns={2}>
+        <Column>
+          <Pin color="var(--color-brand-5)">
+            <FormulaIcon />
+          </Pin>
+          <Text as="h4">WE PUT THE &ldquo;S&rdquo; IN SIMPLICITY</Text>
+          <Text>
+            StyleQ is bridging the gap between professional stylists
+            and customers. We help you find experienced, local stylists
+            last minute while helping stylists fill empty chairs.
+          </Text>
+          <Text>
+            You don't need to worry about finding a quality stylist that
+            meets your unique hair needs on our platform. Clients fill out
+            a survey to match them with a stylist that has expertise in
+            their hair type and their desired service.
+          </Text>
+          <Text>
+            Before booking, you can browse portfolios and reviews for
+            each available stylist on our roster.
+          </Text>
+          <Text>
+            Hectic schedules shouldn't prevent you from looking your best!
+            Let StyleQ make booking your next service simple and stress-free.
+          </Text>
+        </Column>
+        <Column>
+          <Video controls poster="https://res.cloudinary.com/strich/image/upload/v1587662805/styleq-video-poster_q5cvy7.jpg">
+            <source src="https://res.cloudinary.com/strich/video/upload/v1586997169/1rnu8-6mhff_vaweam.mp4" type="video/mp4" />
+            <track
+              default
+              kind="captions"
+              srcLang="en"
+              src="https://res.cloudinary.com/strich/video/upload/v1586997169/1rnu8-6mhff_vaweam.vtt"
+            />
+          </Video>
+        </Column>
+      </Grid>
     </Container>
   </Root>
 );
