@@ -40,7 +40,7 @@ export default () => (
   <Root>
     <Container>
       <Grid columns={2}>
-      <Column>
+        <Column>
           <Video controls poster="https://res.cloudinary.com/strich/image/upload/v1587662805/styleq-video-poster_q5cvy7.jpg">
             <source src="https://res.cloudinary.com/strich/video/upload/v1586997169/1rnu8-6mhff_vaweam.mp4" type="video/mp4" />
             <track
