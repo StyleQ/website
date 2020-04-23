@@ -28,7 +28,7 @@ const Root = styled.section`
 
 const Video = styled.video`
   width: 100%;
-  border-top-right-radius: var(--round-radius-2);
+  border-radius: var(--round-radius-2);
   object-fit: cover;
 `;
 
