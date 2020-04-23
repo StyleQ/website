@@ -29,6 +29,7 @@ const Root = styled.section`
 
 const Video = styled.video`
   width: 100%;
+  margin: 0;
   border-radius: var(--round-radius-2);
   box-shadow: 0 4.4px 12.5px rgba(0, 0, 0, 0.035),
   0 35px 100px rgba(0, 0, 0, 0.07);
