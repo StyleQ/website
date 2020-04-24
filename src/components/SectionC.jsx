@@ -25,6 +25,10 @@ const Root = styled.section`
     animation: ${dropExpose} 1s linear infinite;
     animation-direction: alternate;
   }
+  ${Grid} :first-child{
+    display: flex;
+    align-items: center;
+  }
 `;
 
 const Video = styled.video`
