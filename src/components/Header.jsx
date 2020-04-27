@@ -73,7 +73,8 @@ const Header = () => {
         <NavLinks>
           <a href="/">Become a Stylist</a>
           <a href="https://blog.bookstyleq.com">Our Blog</a>
-          <Button variant="primary" as="a" href="https://my.setmore.com/bookanappointmentv3.do?uniqueKey=dc195bd4-0d63-451f-84ac-4b4ec3ecf5ca">Get started</Button>
+          <a href="/login"> Login </a>
+          <Button variant="primary" as="a" href= "https://my.setmore.com/bookingpage/dc195bd4-0d63-451f-84ac-4b4ec3ecf5ca" >Get started</Button>
         </NavLinks>
         <BurgerWrapper>
           <BurgerMenu

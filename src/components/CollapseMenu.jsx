@@ -39,6 +39,7 @@ const CollapseMenu = ({ navbarState, handleNavbar }) => {
         <NavLinks>
           <li><a href="/" onClick={handleNavbar}>Become a Stylist</a></li>
           <li><a href="https://blog.bookstyleq.com" onClick={handleNavbar}>Our Blog</a></li>
+          <li><a href="/login" onClick={handleNavbar}>Login</a></li>
           <li><a href="https://my.setmore.com/bookanappointmentv3.do?uniqueKey=dc195bd4-0d63-451f-84ac-4b4ec3ecf5ca" onClick={handleNavbar}>Get Started</a></li>
         </NavLinks>
       </CollapseWrapper>
