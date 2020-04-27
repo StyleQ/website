@@ -30,6 +30,7 @@ const textStyle = (element) => ({
   `,
   h6: () => css`
     font-size: 1.8rem;
+    color: var(--color-brand-1);
   `,
   p: () => css`
     font-size: 1.8rem;
