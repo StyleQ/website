@@ -29,6 +29,8 @@ const GlobalStyle = createGlobalStyle`
   --round-radius-2: 1.2rem;
   --drop-shadow-1: .1rem .1rem .2rem rgba(0, 0, 0, .05);
   --drop-shadow-2: 0 .1rem .2rem rgba(0, 0, 0, .3);
+  --drop-shadow-3: 0 4.4px 12.5px rgba(0, 0, 0, 0.035),
+                0 35px 100px rgba(0, 0, 0, 0.07);
   --animation-easing: cubic-bezier(0.5, 0, 0.5, 1);
   --site-width: 1100px;
   font-size: 62.5%;
@@ -41,7 +43,7 @@ body{
   margin: 0;
   background: var(--color-bg);
   color: var(--color-fg);
-  font: 1.8rem/1.5 var(--font-secondary);
+  font: 1.6rem/1.5 var(--font-secondary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -53,6 +55,9 @@ a{
   text-decoration: none;
   background-color: transparent;
   color: var(--color-link);
+  &:hover, &:focus{
+    color: var(--color-brand-2);
+  }
 }
 img{
   max-width: 100%;

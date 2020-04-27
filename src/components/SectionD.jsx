@@ -21,7 +21,7 @@ const heartRelease = keyframes`
 
 const Root = styled.section`
   position: relative;
-  padding: 25rem 0 15rem;
+  padding: 25rem 0 0;
   text-align: center;
   overflow: hidden;
   > svg{

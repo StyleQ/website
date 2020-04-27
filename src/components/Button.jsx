@@ -8,7 +8,8 @@ const variantStyle = (variant) => {
       font-weight: bold;
       box-shadow: .2rem .5rem .4rem 0 rgba(0,0,0,.04),
                   .2rem .5rem .5rem 0 rgba(0,0,0,.12);
-      &:hover{
+      &:hover, &:focus{
+        color: #fff;
         transform: scale(1.02);
         box-shadow: rgba(0,0,0,.41) 0 1.4rem 2.6rem -1.2rem,
                     rgba(0,0,0,.11) 0 .4rem 2.3rem 0,

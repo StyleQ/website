@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import Container from './Container';
 import Text from './Typography';
 import Divider from '../assets/divider-four.svg';
+import { Grid, Column } from './Grid';
+import Testimonial from './Testimonial';
 
 const Root = styled.section`
   position: relative;
@@ -21,11 +23,18 @@ export default () => (
   <Root>
     <Divider />
     <Container>
-      <Text as="h2">CUSTOMERS STAY HAPPY</Text>
-      <Text>
-        We build long and lasting relationships that make you want to come back.
-        See what our happy customers have to say.
-      </Text>
+      <Grid columns={2}>
+        <Column>
+          <Text as="h2">CUSTOMERS STAY HAPPY</Text>
+          <Text>
+            We build long and lasting relationships that make you want to come back.
+            See what our happy customers have to say.
+          </Text>
+        </Column>
+        <Column>
+          <Testimonial />
+        </Column>
+      </Grid>
     </Container>
   </Root>
 );
