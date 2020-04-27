@@ -39,13 +39,12 @@ const Root = styled.header`
   }
 `;
 
-const NavLinks = styled.ul`
+const Nav = styled.nav`
   justify-self: end;
   list-style-type: none;
   margin: auto 0;
 
   a {
-    font-weight: 400;
     margin: 0 1.5rem;
   }
 
@@ -70,11 +69,11 @@ const Header = () => {
     <Root>
       <Container>
         <Link to="/"><Logo /></Link>
-        <NavLinks>
-          <a href="/">Become a Stylist</a>
+        <Nav role="navigation">
+          <a href="https://styleqpro.typeform.com/to/fR7u7NOW9">Become a Stylist</a>
           <a href="https://blog.bookstyleq.com">Our Blog</a>
           <Button variant="primary" as="a" href="https://my.setmore.com/bookanappointmentv3.do?uniqueKey=dc195bd4-0d63-451f-84ac-4b4ec3ecf5ca">Get started</Button>
-        </NavLinks>
+        </Nav>
         <BurgerWrapper>
           <BurgerMenu
             navbarState={navBarOpen}

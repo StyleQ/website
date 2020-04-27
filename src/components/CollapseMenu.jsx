@@ -1,55 +1,42 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-const CollapseWrapper = styled.div`
+const Nav = styled.nav`
   background: #ffffff;
   position: fixed;
   top: 7.0rem;
   left: 0;
   right: 0;
-`;
-
-const NavLinks = styled.ul`
-  list-style-type: none;
-  padding: 2rem 1rem 2rem 2rem;
-
-  li {
-    transition: all 300ms linear 0s;
-  }
-
-  & a {
-    font-size: 1.4rem;
-    line-height: 2;
-    color: #000000;
-    text-transform: uppercase;
-    text-decoration: none;
-    cursor: pointer;
-
+  border-top: solid thin #eee;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all .3s var(--animation-easing);
+  ${({ navbarOpen }) => navbarOpen && css`
+    opacity: 1;
+    transform: scaleY(1);
+  `}
+  a {
+    display: block;
+    padding: 2rem;
+    transition: background-color .2s ease;
     &:hover {
-      border-bottom: 1px solid #000000;
+      background-color: #f4f4f4;
     }
   }
 `;
 
-const CollapseMenu = ({ navbarState, handleNavbar }) => {
-  if (navbarState === true) {
-    return (
-      <CollapseWrapper>
-        <NavLinks>
-          <li><a href="/" onClick={handleNavbar}>Become a Stylist</a></li>
-          <li><a href="https://blog.bookstyleq.com" onClick={handleNavbar}>Our Blog</a></li>
-          <li><a href="https://my.setmore.com/bookanappointmentv3.do?uniqueKey=dc195bd4-0d63-451f-84ac-4b4ec3ecf5ca" onClick={handleNavbar}>Get Started</a></li>
-        </NavLinks>
-      </CollapseWrapper>
-    );
-  }
-  return null;
-};
+const CollapseMenu = ({ navbarState }) => (
+  <Nav navbarOpen={navbarState} id="menu">
+    <a href="/">Become a Stylist</a>
+    <a href="https://blog.bookstyleq.com">Our Blog</a>
+    <a href="https://my.setmore.com/bookanappointmentv3.do?uniqueKey=dc195bd4-0d63-451f-84ac-4b4ec3ecf5ca">Get Started</a>
+  </Nav>
+);
 
 CollapseMenu.propTypes = {
   navbarState: PropTypes.bool.isRequired,
-  handleNavbar: PropTypes.func.isRequired,
 };
 
 export default CollapseMenu;

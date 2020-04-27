@@ -65,7 +65,7 @@ const Footer = () => (
           <Text>Ready to start having quick and quality styling done?</Text>
           <Text as="h3">Create an account with us</Text>
         </div>
-        <Button variant="primary" responsive>REGISTER NOW</Button>
+        <Button as="a" variant="primary" responsive href="https://my.setmore.com/bookanappointmentv3.do?uniqueKey=dc195bd4-0d63-451f-84ac-4b4ec3ecf5ca">GET STARTED</Button>
       </Container>
     </TopFooter>
     <BottomFooter>
@@ -78,7 +78,7 @@ const Footer = () => (
               <input type="text" name="b_ca7d77d8dd73f52e49e56d814_646b5bfa5e" tabIndex="-1" />
             </div>
             <Label variant="wrapper">
-              <TextBox name="EMAIL" type="email" id="mce-EMAIL" placeholder="Enter your email address" required />
+              <TextBox name="EMAIL" type="email" id="mce-EMAIL" placeholder="Enter your email address" autocomplete="off" required />
               <Button variant="wrapped">Subscribe</Button>
             </Label>
           </form>
