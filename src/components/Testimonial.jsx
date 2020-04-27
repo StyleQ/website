@@ -1,126 +1,87 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
+import Slider from 'react-slick';
+import Text from './Typography';
 
-const revolve = keyframes`
-  30%{
-    transform: rotateY(0deg);
-    opacity: 1;
-  }
-  35%{
-    transform: rotateY(90deg);
-    opacity: 0;
-  }
-  95%{
-    transform: rotateY(-90deg);
-    opacity: 0;
-  }
-  100%{
-    transform: rotateY(0deg);
-    opacity: 1;
-  }
-`;
-
-const shift = keyframes`
-  0%{
-    transform: translateX(-2rem);
-  }
-  50%{
-    transform: translateX(0);
-  }
-  100%{
-    transform: translateX(2rem);
-  }
-`;
+const sliderSettings = {
+  arrows: false,
+  autoplay: true,
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+};
 
 const Root = styled.div`
   position: relative;
-  width: 50rem;
+  width: 80vw;
+  max-width: 50rem;
   margin: 2rem auto;
-`;
-
-const Carousel = styled.div`
-  width: 100%;
-  height: 30rem;
-  border-radius: var(--round-radius-2);
-  perspective: 3000px;
-  overflow: hidden;
-  > *{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    animation: ${revolve} 9s var(--animation-easing) infinite;
-  }
-  > :nth-child(1) {
-    animation-delay: -9s;
-  }
-  > :nth-child(2) {
-    animation-delay: -12s;
-  }
-  > :nth-child(3) {
-    animation-delay: -15s;
-  }
-  blockquote{
-    margin: 0;
-    padding: 2rem;
-    background: #fff;
+  .slick-list{
+    border-radius: var(--round-radius-2);
     box-shadow: var(--drop-shadow-3);
   }
 `;
 
-const Dots = styled.div`
-  position: relative;
-  width: 1rem;
-  height: 1rem;
-  margin: 2rem auto;
-  border-radius: 50%;
-  background: #ddd;
-  &::before, &::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: inherit;
-    border-radius: inherit;
+const Quote = styled.div`
+  height: 27rem;
+  padding: 4rem;
+  background: #fff;
+  > ${Text} {
+    height: 60%;
   }
-  &::before{
-    left: -2rem;
+  div{
+    text-align: right;
+    img, ${Text}{
+      display: inline-block;
+      text-align: right;
+    }
   }
-  &::after{
-    right: -2rem;
+  img{
+    vertical-align: middle;
+    width: 4rem;
+    height: 4rem;
+    margin-left: 1rem;
+    border-radius: var(--round-radius-1);
+    object-fit: cover;
   }
-`;
-
-const Indicator = styled.span`
-  position: absolute;
-  top: 0;
-  z-index: 10;
-  width: 100%;
-  height: 100%;
-  border-radius: inherit;
-  background: #555;
-  animation: ${shift} 9s infinite;
 `;
 
 export default () => (
   <Root>
-    <Carousel>
-      <blockquote>
-        StyleQ connects me with my favorite people
-        <div>Author Name</div>
-      </blockquote>
-      <blockquote>
-        Content of second quote
-        <div>Author Name</div>
-      </blockquote>
-      <blockquote>
-        Content of third quote
-        <div>Author Name</div>
-      </blockquote>
-    </Carousel>
-    <Dots>
-      <Indicator />
-    </Dots>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+    <Slider {...sliderSettings}>
+      <Quote>
+        <Text size="2.2rem">
+          StyleQ connects me so easily with clients and gives me an opportunity to build my network.
+        </Text>
+        <div>
+          <Text as="h6">Alivia</Text>
+          <img src="https://res.cloudinary.com/strich/image/upload/v1588015226/reviewer-6_kewzvm.jpg" alt="Alivia" />
+        </div>
+      </Quote>
+      <Quote>
+        <Text size="2.2rem">
+          Alivia did a fantastic job. She asked a lot of questions to make sure
+          we were on the same page, and then executed perfection.
+        </Text>
+        <div>
+          <Text as="h6">Molly</Text>
+          <img src="https://res.cloudinary.com/strich/image/upload/v1588015226/reviewer-2_j6wgob.jpg" alt="Molly" />
+        </div>
+      </Quote>
+      <Quote>
+        <Text size="2.2rem">
+          Going into my appointment, I wasn't sure what to expect. However,
+          after the consultation process, my needs were met and exceeded.
+        </Text>
+        <div>
+          <Text as="h6">Matt</Text>
+          <img src="https://res.cloudinary.com/strich/image/upload/v1588015226/reviewer-3_pxddgc.jpg" alt="Matt" />
+        </div>
+      </Quote>
+    </Slider>
   </Root>
 );

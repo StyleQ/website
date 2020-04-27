@@ -43,7 +43,7 @@ body{
   margin: 0;
   background: var(--color-bg);
   color: var(--color-fg);
-  font: 1.6rem/1.5 var(--font-secondary);
+  font: 1.8rem/1.5 var(--font-secondary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;

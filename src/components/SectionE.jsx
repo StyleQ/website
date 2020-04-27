@@ -17,6 +17,11 @@ const Root = styled.section`
     left: 0;
     width: 100vw;
   }
+  ${Column} {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 `;
 
 export default () => (
