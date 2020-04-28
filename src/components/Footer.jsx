@@ -90,7 +90,7 @@ const Footer = () => (
           <div>
             <Button as="a" variant="primary" href="https://play.google.com/store/apps/details?id=ubitrix.styleq&hl=en_US">
               <Android />
-              Get the app on Android
+              Get the app on android
             </Button>
           </div>
           <Text className="social">

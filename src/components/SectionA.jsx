@@ -54,7 +54,7 @@ export default () => (
   <Root>
     <Container>
       <div>
-        <Text as="h1">Treat Yourself.</Text>
+        <Text as="h1">Treat yourself.</Text>
         <Text>
           Have a last minute event but your stylist is booked solid?
           StyleQ has you covered by finding hair stylists near you with same-day availability.
