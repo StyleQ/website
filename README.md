@@ -5,6 +5,7 @@ The bookstyleq.com website
 - [Node.js](https://nodejs.org/en/) v12.x.x - JavaScript Runtime
 - [NPM](https://www.npmjs.com/) v6.x.x - Package Manager
 - [React](https://reactjs.org/) v16.x.x - User Interface Library
+- [Next.js](https://nextjs.org) v9.x.x - Server Side Rendering
 - [Webpack](https://webpack.js.org/) v4.x.x - Bundler
 - [Styled Components](https://styled-components.com/) v5.x.x - Styling
 - [Express](https://expressjs.com/) v4.x.x - Optional Web Server
