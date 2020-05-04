@@ -4,10 +4,10 @@ import Text from './Typography';
 import Container from './Container';
 import Button from './Button';
 import { TextBox, Label } from './Forms';
-// import Android from '../assets/icons/android.svg';
-// import Facebook from '../assets/icons/facebook.svg';
-// import Twitter from '../assets/icons/twitter.svg';
-// import Instagram from '../assets/icons/instagram.svg';
+import Android from '../assets/icons/android.svg';
+import Facebook from '../assets/icons/facebook.svg';
+import Twitter from '../assets/icons/twitter.svg';
+import Instagram from '../assets/icons/instagram.svg';
 
 const TopFooter = styled.div`
   padding: 5rem 0;
@@ -89,19 +89,19 @@ const Footer = () => (
         <div>
           <div>
             <Button as="a" variant="primary" href="https://play.google.com/store/apps/details?id=ubitrix.styleq&hl=en_US">
-              {/* <Android /> */}
+              <Android />
               Get the app on android
             </Button>
           </div>
           <Text className="social">
             <a href="https://www.facebook.com/BookStyleQ/">
-              {/* <Facebook /> */}
+              <Facebook />
             </a>
             <a href="https://twitter.com/bookstyleq">
-              {/* <Twitter /> */}
+              <Twitter />
             </a>
             <a href="https://www.instagram.com/intostyleq/">
-              {/* <Instagram /> */}
+              <Instagram />
             </a>
           </Text>
         </div>
