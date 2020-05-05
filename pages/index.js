@@ -1,4 +1,3 @@
-import React from 'react'
 import Layout from '../templates/Layout';
 import Header from '../components/Header';
 import SectionA from '../components/SectionA';
@@ -17,5 +16,5 @@ export default function Home() {
       <SectionD />
       <SectionE />
     </Layout>
-  )
+  );
 }

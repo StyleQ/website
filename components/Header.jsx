@@ -66,7 +66,7 @@ const Header = () => {
   return (
     <Root>
       <Container>
-        <a href="/"><Logo /></a>
+        <a href="/"><Logo aria-label="StyleQ logo" /></a>
         <Nav role="navigation">
           <a href="https://styleqpro.typeform.com/to/fR7u79">Become a stylist</a>
           <a href="https://blog.bookstyleq.com">Our blog</a>

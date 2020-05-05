@@ -7,7 +7,10 @@
       "react-hooks"
     ],
     "rules": {
-      "indent": ["error", 2, { "SwitchCase": 1 }],
+      "indent": ["error", 2, {
+        "SwitchCase": 1,
+        "ignoredNodes": ["TemplateLiteral"]
+      }],
       "linebreak-style": ["error", "unix"],
       "semi": ["error", "always"],
       "no-restricted-imports": ["error", {
@@ -30,9 +33,14 @@
       "no-plusplus": "off",
       "no-restricted-globals": "off",
       "arrow-parens": "off",
-      "react/jsx-props-no-spreading": "off",
+      "react/jsx-filename-extension": "off",
       "react/jsx-one-expression-per-line": "off",
+      "react/jsx-props-no-spreading": "off",
       "react/no-unescaped-entities": "off",
+      "react/react-in-jsx-scope": "off",
       "react/state-in-constructor": "off"
+    },
+    "globals": {
+      "React": "writable"
     }
   }
