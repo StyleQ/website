@@ -75,7 +75,7 @@ export default () => (
           <Service name="NATURAL HAIR" image="https://res.cloudinary.com/strich/image/upload/v1586812341/styleq-natural_zku8ba.jpg" />
         </Column>
         <Column>
-          <Service name="COLOR" image="https://res.cloudinary.com/strich/image/upload/v1586812341/styleq-color_nretgd.jpg" />
+          <Service name="Spa/Hair Removal" image="https://res.cloudinary.com/strich/image/upload/v1586812341/styleq-color_nretgd.jpg" />
         </Column>
         <Column>
           <Service name="MAKEUP" image="https://res.cloudinary.com/strich/image/upload/v1586812341/styleq-makeup_yghv6u.jpg" />
