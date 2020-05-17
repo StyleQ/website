@@ -71,7 +71,7 @@ export default () => (
           </Text>
         </Column>
       </Grid>
-      <Button responsive variant="primary" as="a" href="https://app.engati.com/static/standalone/bot.html?bot_key=5e26745e9b794e60">Start your survey here</Button>
+      <Button responsive variant="primary" as="a" href="https://app.engati.com/static/standalone/bot.html?bot_key=5e26745e9b794e60">Chat with Us</Button>
     </Container>
   </Root>
 );
