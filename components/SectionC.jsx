@@ -67,8 +67,8 @@ export default () => (
             Let StyleQ make booking your next service simple and stress-free.
           </Text>
         </Column>
-        <Button responsive variant="primary" as="a" href="https://app.engati.com/static/standalone/bot.html?bot_key=5e26745e9b794e60">Start your survey here</Button>
       </Grid>
+      <Button responsive variant="primary" as="a" href="https://app.engati.com/static/standalone/bot.html?bot_key=5e26745e9b794e60">Start your survey here</Button>
     </Container>
   </Root>
 );
