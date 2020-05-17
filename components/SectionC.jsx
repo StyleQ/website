@@ -5,6 +5,7 @@ import Text from './Typography';
 import FormulaIcon from '../assets/icons/simple-formula.svg';
 import Pin from './Pin';
 import { Grid, Column } from './Grid';
+import Button from './Button';
 
 const dropExpose = keyframes`
   0%{
