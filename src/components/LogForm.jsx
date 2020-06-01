@@ -62,39 +62,44 @@ width: 400px;
   }
 `;
 
-
-
 const LogForm = () => (
   <StyleLogin>
     <Container>
-      <img src="../assets/Brushes.jpg" />
+      <img src="../assets/Brushes.jpg" alt="Brushpic" />
       <div className="formleft">
-        <Text as="h2" > Login </Text>
-        <div>          
+        <Text as="h2"> Login </Text>
+        <div>
           <TextBox name="Emaillog" type="email" id="mce-EMAIL" placeholder="email" required />
-          <p />
-          <TextBox name="Passwordlog" type="text" placeholder="password" required/>
-          <div className="Otherlogs">
-            <Button variant="primary" style={{ padding: '1rem', margin: '2rem' }} href="https://my.setmore.com/bookingpage/dc195bd4-0d63-451f-84ac-4b4ec3ecf5ca" > Login </Button>
-            <Container>
-            <Text as="small" > Forgot Password? </Text>
-            <p> <Text as="small"> Register </Text> </p>
-             </Container>             
-           </div>          
-         </div>
+          <p>
+            <TextBox name="Passwordlog" type="text" placeholder="password" required />
+            <div className="Otherlogs">
+              <Button variant="primary" style={{ padding: '1rem', margin: '2rem' }} href="https://my.setmore.com/bookingpage/dc195bd4-0d63-451f-84ac-4b4ec3ecf5ca"> Login </Button>
+              <Container>
+                <Text as="small">Forgot Password?</Text>
+                <p>
+                  <Text as="small">Register</Text>
+                </p>
+              </Container>
+            </div>
+          </p>
+        </div>
       </div>
     </Container>
     <Container style={{ position: 'relative', padding: '5rem' }}>
       <div>
         <Button as="a" variant="primary" href="https://play.google.com/store/apps/details?id=ubitrix.styleq&hl=en_US">
-            <Android />
-            Get the app on Android
-            </Button>
+          <Android />
+          Get the app on Android
+        </Button>
       </div>
       <div>
         <div>
           <Text as="small" className="copyright">
-            © {new Date().getFullYear()} StyleQ. All rights reserved
+            ©
+            {' '}
+            {new Date().getFullYear()}
+            {' '}
+            StyleQ. All rights reserved
           </Text>
         </div>
         <Text className="social">
@@ -109,8 +114,8 @@ const LogForm = () => (
           </a>
         </Text>
       </div>
-     </Container>
-    </StyleLogin>
-  );
+    </Container>
+  </StyleLogin>
+);
 
 export default LogForm;

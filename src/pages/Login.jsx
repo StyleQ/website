@@ -1,15 +1,13 @@
 
-import React from 'react'
+import React from 'react';
 import LogForm from '../components/LogForm';
 import GlobalStyle from '../components/GlobalStyle';
 import Header from '../components/Header';
 
 
-
-const Login = ({ children }) => (
+const Login = () => (
   <>
     <GlobalStyle />
-    {children}
     <Header />
     <LogForm />
   </>
@@ -24,4 +22,3 @@ const Login = ({ children }) => (
 
 
 export default Login;
-
