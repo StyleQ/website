@@ -70,7 +70,7 @@ const Header = () => {
         <Nav role="navigation">
           <a href="https://styleqpro.typeform.com/to/fR7u79">Become a stylist</a>
           <a href="https://blog.bookstyleq.com">Our blog</a>
-          <Button variant="primary" as="a" href="https://my.setmore.com/bookanappointmentv3.do?uniqueKey=dc195bd4-0d63-451f-84ac-4b4ec3ecf5ca">Get started</Button>
+          <Button variant="primary" as="a" href="/Login">Get started</Button>
         </Nav>
         <BurgerWrapper>
           <BurgerMenu
