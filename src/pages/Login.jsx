@@ -13,12 +13,6 @@ const Login = () => (
   </>
 );
 
-/*   img{
-    position: relative;
-    bottom: -2rem;
-    @media(min-width: 720px) {
-      bottom: -1rem;
-    } */
 
 
 export default Login;
