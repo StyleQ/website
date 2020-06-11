@@ -41,11 +41,11 @@ const Wrapper = styled.button`
       transform-origin: bottom left;
     }
   }
-  ${({ navbarOpen }) => navbarOpen
-    && css`
+  ${({ navbarOpen }) => navbarOpen && css`
     span{
       background-color: transparent;
-      &::before{transform: rotate(45deg);
+      &::before{
+        transform: rotate(45deg);
       }
       &::after{
         transform: rotate(-45deg);

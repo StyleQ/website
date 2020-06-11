@@ -33,7 +33,6 @@ yarn-error.log*
 
 # vscode
 *.code-workspace
-/.vs
 
 # Optional eslint cache
 .eslintcache
