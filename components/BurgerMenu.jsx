@@ -45,7 +45,8 @@ const Wrapper = styled.button`
     && css`
     span{
       background-color: transparent;
-      &::before{transform: rotate(45deg);
+      &::before{
+        transform: rotate(45deg);
       }
       &::after{
         transform: rotate(-45deg);

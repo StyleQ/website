@@ -1,23 +1,15 @@
 import React from 'react';
 import LogForm from '../components/LogForm';
-import GlobalStyle from '../components/GlobalStyle';
 import Header from '../components/Header';
+import Layout from '../templates/Layout';
 
 
 const Login = () => (
-  <>
-    <GlobalStyle />
+  <Layout>
     <Header />
     <LogForm />
-  </>
+  </Layout>
 );
-
-/*   img{
-    position: relative;
-    bottom: -2rem;
-    @media(min-width: 720px) {
-      bottom: -1rem;
-    } */
 
 
 export default Login;

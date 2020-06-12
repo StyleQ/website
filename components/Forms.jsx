@@ -18,8 +18,8 @@ const TextBoxStyle = styled.input`
   `}
 `;
 
-export const TextBox = ({ type = 'text' }) => (
-  <TextBoxStyle type={type} />
+export const TextBox = ({ type = 'text', ...props }) => (
+  <TextBoxStyle type={type} {...props} />
 );
 
 TextBox.propTypes = {
