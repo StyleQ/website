@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Layout from '../templates/Layout';
 
 
-const Login = () => (
+const login = () => (
   <Layout>
     <Header />
     <LogForm />
@@ -12,4 +12,4 @@ const Login = () => (
 );
 
 
-export default Login;
+export default login;

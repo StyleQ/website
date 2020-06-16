@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import SecondFooter from '../components/SecondFooter';
 import GlobalStyle from '../components/GlobalStyle';
 
-const Register = () => (
+const register = () => (
   <>
     <GlobalStyle />
     <Header />
@@ -13,4 +13,4 @@ const Register = () => (
   </>
 );
 
-export default Register;
+export default register;
