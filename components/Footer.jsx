@@ -83,9 +83,7 @@ const Footer = () => (
             </Label>
           </form>
           <Text as="small" className="copyright">
-            ©
-            {new Date().getFullYear()}
-            StyleQ. All rights reserved
+            © {new Date().getFullYear()} StyleQ. All rights reserved
           </Text>
         </div>
         <div>

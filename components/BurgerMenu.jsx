@@ -41,8 +41,7 @@ const Wrapper = styled.button`
       transform-origin: bottom left;
     }
   }
-  ${({ navbarOpen }) => navbarOpen
-    && css`
+  ${({ navbarOpen }) => navbarOpen && css`
     span{
       background-color: transparent;
       &::before{

@@ -23,7 +23,7 @@ export const TextBox = ({ type = 'text', ...props }) => (
 );
 
 TextBox.propTypes = {
-  type: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired
 };
 
 export const TextArea = styled.textarea``;
@@ -49,7 +49,7 @@ const LabelStyle = styled.label`
 `;
 
 export const Label = ({ variant = 'default', ...props }) => (
-  <LabelStyle variant={variant} />
+  <LabelStyle variant={variant} {...props} />
 );
 
 Label.propTypes = {
