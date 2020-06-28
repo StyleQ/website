@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import Button from './Button';
 import Container from './Container';
@@ -28,7 +28,7 @@ input::placeholder {
 
 
 const RegisterForm = () => (
-  <StyleRegister>
+  <StyleRegister onSubmit={handleSubmit}>
     <Text as="h2" style={{ padding: '2rem' }}>Make an Account</Text>
     <div>
       <Container>
