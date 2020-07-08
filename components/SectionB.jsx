@@ -45,7 +45,7 @@ export default () => (
       <Grid columns={3}>
         <Column>
           <Map />
-          <Text as="h5">Pick a Stylist</Text>
+          <Text as="h5">Select a Service</Text>
           <Text>
             Wherever you go and whenever you need one, you can
             easily select from our pool of skilled stylists
