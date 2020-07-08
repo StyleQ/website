@@ -33,7 +33,7 @@ npm install
 To start the application, you can now run:
 
 ```
-npm start
+npm run dev
 ```
 
 ### Writing and Running Tests
