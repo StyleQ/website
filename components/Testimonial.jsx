@@ -82,6 +82,26 @@ export default () => (
           <img src="https://res.cloudinary.com/strich/image/upload/v1588015226/reviewer-3_pxddgc.jpg" alt="Matt" />
         </div>
       </Quote>
+      <Quote>
+        <Text size="2.2rem">
+        Zoe does a great job with my haircut as always.
+        </Text>
+        <div>
+          <Text as="h6">Que</Text>
+          <img src="https://res.cloudinary.com/styleq/image/upload/v1594256033/Que-1_eezxbo.jpg" alt="Que" />
+        </div>
+      </Quote>
+      <Quote>
+        <Text size="2.2rem">
+          Even with this pandemic I love how I can still connect with others
+          virtually and the energy/vibe is still fun and the same virtually
+          as if I was still in the treatment room.
+        </Text>
+        <div>
+          <Text as="h6">Breanna</Text>
+          <img src="https://res.cloudinary.com/styleq/image/upload/v1594256245/Breanna.jpg" alt="Breanna" />
+        </div>
+      </Quote>
     </Slider>
   </Root>
 );
