@@ -84,7 +84,7 @@ export default () => (
       </Quote>
       <Quote>
         <Text size="2.2rem">
-        Zoe does a great job with my haircut as always.
+          Zoe does a great job with my haircut as always.
         </Text>
         <div>
           <Text as="h6">Que</Text>
