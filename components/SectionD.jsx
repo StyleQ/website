@@ -69,19 +69,19 @@ export default () => (
           <Service name="BRAIDS/LOCKS" image="https://res.cloudinary.com/strich/image/upload/v1586812341/styleq-braids_urotsx.jpg" />
         </Column>
         <Column>
-          <Service name="BLOWOUTS" image="https://res.cloudinary.com/strich/image/upload/v1586812341/styleq-blowout_bcyptx.jpg" />
+          <Service name="BLOWOUTS" image="https://res.cloudinary.com/dnk42vfsu/image/upload/v1594331972/website/photo-of-woman-wearing-white-tank-top-3696351_cbla75.jpg" />
         </Column>
         <Column>
           <Service name="TWISTOUTS" image="https://res.cloudinary.com/strich/image/upload/v1586812341/styleq-natural_zku8ba.jpg" />
         </Column>
         <Column>
-          <Service name="EXTENTIONS/SEW-INS" image="https://storage.googleapis.com/staging.styleq-1560827295009.appspot.com/alan-caishan-cU53ZFBr3lk-unsplash(1).jpg" />
+          <Service name="EXTENTIONS/SEW-INS" image="https://res.cloudinary.com/dnk42vfsu/image/upload/v1594335130/website/woman-in-black-and-white-checked-mini-skirt-and-brown-coat-3597932_mtgbg4.jpg" />
         </Column>
         <Column>
-          <Service name="MAKEUP" image="https://storage.googleapis.com/staging.styleq-1560827295009.appspot.com/oz-seyrek-8_8zPKmKe0k-unsplash(1).jpg" />
+          <Service name="MAKEUP" image="https://res.cloudinary.com/dnk42vfsu/image/upload/v1594329766/website/oz-seyrek-8_8zPKmKe0k-unsplash_1_zdcknv.jpg" />
         </Column>
         <Column>
-          <Service name="MANICURES/PEDICURES" image="https://res.cloudinary.com/strich/image/upload/v1586812341/styleq-nails_ltfsrm.jpg" />
+          <Service name="MANICURES/PEDICURES" image="https://res.cloudinary.com/dnk42vfsu/image/upload/v1594333262/website/person-in-black-gloves-massaging-fingers-3997383_pbmwby.jpg" />
         </Column>
       </Grid>
     </Container>
