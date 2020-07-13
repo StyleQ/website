@@ -9,7 +9,7 @@ const register = () => (
     <GlobalStyle />
     <Header />
     <RegisterForm />
-    <SecondFooter />
+    <SecondFooter /> {/* Not the same as footer in Layout */}
   </>
 );
 

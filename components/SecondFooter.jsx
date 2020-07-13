@@ -13,6 +13,7 @@ const StyleRegister = styled.div`
 background: var(--color-brand-6);
 display:flex;
 flex-flow: column;
+margin-top: 35rem;
 
 
   ${Container} {

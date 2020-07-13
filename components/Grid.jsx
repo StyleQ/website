@@ -10,7 +10,7 @@ export const Grid = styled.div`
     @media(min-width: 1020px) {
       grid-template-columns: repeat(${Math.floor(columns / 2 + 1)}, 1fr);
     }
-    @media(min-width: 1240px) {
+    @media(min-width: 2000px) {
       grid-template-columns: repeat(${columns}, 1fr);
     }
   `}
