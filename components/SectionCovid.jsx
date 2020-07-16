@@ -46,9 +46,6 @@ export default () => (
     <Container>
       <Grid columns={1}>
         <Column>
-          <Pin color="var(--color-brand-5)">
-            <FormulaIcon />
-          </Pin>
           <Text as="h4">Work with the top beauty professionals in your city.</Text>
           <Text>
             <ul>
