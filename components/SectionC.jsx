@@ -51,20 +51,14 @@ export default () => (
           </Pin>
           <Text as="h4">WE PUT THE &ldquo;S&rdquo; IN SIMPLICITY</Text>
           <Text>
-            StyleQ is bridging the gap between professional stylists and customers.
-            We help you find experienced, local stylists last minute.
+            StyleQ is bridging the gap between professional stylists and
+            customers. We help you find experienced, local stylists last
+            minute while helping stylists fill empty chairs.
           </Text>
           <Text>
-            You don't need to spend countless hours calling and searching
-            around to find a quality stylist that meets your unique needs.
-          </Text>
-          <Text>
-            Chat with our beauty expert that knows all things style
-            to help achieve your desired look.
-          </Text>
-          <Text>
-            We want you to feel comfortable looking your best!
-            Let StyleQ make booking your next service simple and stress-free.
+            Hectic schedules shouldn't prevent you from looking your
+            best! Let StyleQ make booking your next service simple and
+            stress-free.
           </Text>
         </Column>
       </Grid>
