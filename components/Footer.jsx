@@ -83,6 +83,7 @@ const Footer = () => (
             </Label>
           </form>
           <Text as="small" className="copyright">
+            <p>Contact StyleQ Support - (262) 345-2127</p>
             © {new Date().getFullYear()} StyleQ. All rights reserved
           </Text>
         </div>
