@@ -6,6 +6,7 @@ import FormulaIcon from '../assets/icons/simple-formula.svg';
 import Pin from './Pin';
 import { Grid, Column } from './Grid';
 import Button from './Button';
+import CovidModal from './CovidModal';
 
 const dropExpose = keyframes`
   0%{
@@ -65,7 +66,7 @@ export default () => (
           </Text>
           <Text>
             <ul>
-              <li>Certified in COVID-19 Safety Protocols</li>
+              <li><CovidModal /></li>
             </ul>
           </Text>
         </Column>
