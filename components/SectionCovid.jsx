@@ -51,7 +51,6 @@ export default () => (
   <Root>
     <Container>
       <Grid columns={1}>
-        <Img src="https://res.cloudinary.com/dnk42vfsu/image/upload/v1594937667/website/COVID_SAFETY_sgixnw.png" alt="covid" />
         <Column>
           <Text as="h4">Work with the top beauty professionals in your city.</Text>
           <Text>
