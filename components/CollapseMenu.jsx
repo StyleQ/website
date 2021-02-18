@@ -31,7 +31,7 @@ const CollapseMenu = ({ navbarState }) => (
   <Nav navbarOpen={navbarState} id="menu">
     <a href="/">Become a Stylist</a>
     <a href="https://blog.bookstyleq.com">Our Blog</a>
-    <a href="https://my.setmore.com/bookanappointmentv3.do?uniqueKey=dc195bd4-0d63-451f-84ac-4b4ec3ecf5ca">Get Started</a>
+    <a href="/login">Get Started</a>
   </Nav>
 );
 
